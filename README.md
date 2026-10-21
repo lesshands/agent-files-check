@@ -1,7 +1,7 @@
 # agent-files-check
 
 Your agent instruction files (`CLAUDE.md`, `AGENTS.md`, `GEMINI.md`, Cursor rules, Copilot instructions, Windsurf and
-Cline rules, Claude Code skills) describe the code. The code moves; the files often do not. This check finds the places
+Cline rules) describe the code. The code moves; the files often do not. This check finds the places
 where they no longer match, and proves each one from your own git history.
 
 ```
@@ -17,12 +17,16 @@ AGENTS.md:88  [missing-script]  `pnpm run typecheck`: no package.json in the rep
 | Kind | When |
 |---|---|
 | `moved-or-deleted` | A file or folder the instructions name is gone, and git history shows the commit that removed or renamed it (and where it went, when it can tell). |
-| `missing-script` | A `npm run` / `pnpm run` / `yarn run` / `bun run` script that no `package.json` in the repository defines. |
 | `pr-breaks` | On a pull request: this change deletes or renames something the instructions name. The note lands on the line in the pull request. |
 
 It reports only what it can prove. A path that was never in the repository is not reported, because it is usually a
 package name, a file made at run time, a branch, or a pattern; most hits from a plain "does this path exist" scan are
-those. Sentences that already say a file was removed are skipped. Gitignored paths are skipped.
+those. Sentences that already say a file was removed, lives in another repository, or is the thing *not* to use are skipped.
+Gitignored paths are skipped. Translated copies of agent files are skipped. Skills, slash commands and prompt files are
+not read, because they describe the user's project, not the repository that ships them.
+
+An `npm run` / `pnpm run` / `yarn run` / `bun run` script check exists behind `--experimental-scripts`. It is off by
+default because in testing most of its hits were scripts run in another folder or repository.
 
 ## Run it
 

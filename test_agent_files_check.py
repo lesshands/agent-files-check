@@ -88,7 +88,7 @@ class CheckTest(unittest.TestCase):
         self.assertEqual([(x["line"], x["ref"]) for x in pr], [(4, "lib/keep.go")])
 
     def test_cli_formats(self):
-        for fmt in ("text", "md", "json", "github"):
+        for fmt in ("text", "md", "json", "github"):  # scripts are opt-in
             out = subprocess.run(["python3", afc.__file__, self.repo, "--format", fmt],
                                  capture_output=True, text=True)
             self.assertEqual(out.returncode, 0, out.stderr)

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """agent-files-check: find places where a repository's agent instruction files no longer match the code.
 
-Reads CLAUDE.md, AGENTS.md, GEMINI.md, Cursor rules, Copilot instructions, Windsurf and Cline rules and
-Claude Code skills, commands and agents. Reports only what it can prove from the repository itself:
+Reads CLAUDE.md, AGENTS.md, GEMINI.md, Cursor rules, Copilot instructions, Windsurf and Cline rules.
+Reports only what it can prove from the repository itself:
 
   moved-or-deleted  a file or folder the instructions name is gone, and git history shows when it went
                     (and, when it can tell, where it went)
-  missing-script    a `npm run` / `pnpm run` / `yarn run` / `bun run` script that no package.json defines
+  missing-script    (opt-in, --experimental-scripts) a `npm run` / `pnpm run` / `yarn run` / `bun run` script no package.json defines
   pr-breaks         (with --diff) this change deletes or renames something the instructions name
 
 It never calls a network service and never changes a file. Python 3.8+, standard library only.
@@ -32,17 +32,36 @@ AGENT_FILE_GLOBS = [
     ".cursorrules", "*/.cursorrules", ".cursor/rules/*",
     ".windsurfrules", ".windsurf/rules/*",
     ".clinerules", ".clinerules/*",
-    ".github/copilot-instructions.md", ".github/instructions/*.md", ".github/prompts/*.md",
-    ".claude/commands/*.md", ".claude/agents/*.md", "*SKILL.md",
+    ".github/copilot-instructions.md", ".github/instructions/*.md",
 ]
+# Skills, slash commands, sub-agent and prompt files mostly describe the user's project, not the repository that
+# ships them, so their paths cannot be checked against this repository. They are not read.
 
 # Words that mean the sentence already says the thing is gone or is an example: the text is then accurate.
 ACCURATE_ABSENCE = re.compile(
     r"\b(removed|deleted|no longer|deprecated|migrated|renamed|moved (?:to|from)|replaced|legacy|formerly|"
     r"used to|was dropped|e\.g\.|for example|such as|placeholder|gitignored|generated|created (?:at|on|by)|"
-    r"will be created|is created|writes?|outputs?|produces?)\b",
+    r"will be created|is created|writes?|outputs?|produces?|gone|previously|instead of|rather than|never|"
+    r"do not|don't|not a|is not|isn't|no \w+ files|other repo|separate repo|private repo|clone|"
+    r"your (?:project|repo|repository|app)|repo|repository|per-repo|prunes?|excludes?|banned|avoid)\b|~/|\bcd\s",
     re.IGNORECASE,
 )
+NEGATED_BEFORE = re.compile(r"(\bnot|\bno|\bnever|\bavoid|instead of|rather than|\bNOT)\W{0,3}$", re.IGNORECASE)
+
+
+def negated_here(line, ref):
+    """The words right before this reference negate it: "use `a`, not `b`"."""
+    i = line.find("`" + ref)
+    if i < 0:
+        i = line.find(ref)
+    return i > 0 and bool(NEGATED_BEFORE.search(line[max(0, i - 20):i]))
+
+
+def says_absent(line):
+    """The prose around the reference (code spans removed) already says it is gone, elsewhere, or an example."""
+    return bool(ACCURATE_ABSENCE.search(CODE_SPAN.sub(" ", line)))
+
+
 CODE_SPAN = re.compile(r"`([^`\n]{2,200})`")
 MD_LINK = re.compile(r"\]\(([^)\s]{2,200})\)")
 FENCE = re.compile(r"^\s*(```|~~~)")
@@ -50,7 +69,7 @@ EXT_ONLY = re.compile(r"^\*?\.[A-Za-z0-9]{1,8}$")
 NAME_EXT = re.compile(r"^[A-Za-z0-9_\-.]+\.[A-Za-z][A-Za-z0-9]{0,7}$")
 BAD_CHARS = set(" \t*?<>{}[]$|=,;\"'()!^%")
 PLACEHOLDER = re.compile(r"(XXX|YYYY|MM-DD|\.\.\.|…|<|>|your[-_]|example|foo|bar\b|my[-_])", re.IGNORECASE)
-RUN_CMD = re.compile(r"\b(npm|pnpm|yarn|bun)\s+run\s+([A-Za-z0-9][A-Za-z0-9:_\-.]*)")
+RUN_CMD = re.compile(r"\b(npm|pnpm|yarn|bun)\s+run\s+([A-Za-z0-9][A-Za-z0-9:_\-]*)(?![\w.<:/\-|])")
 
 
 def git(repo, *args, check=True):
@@ -78,6 +97,14 @@ class Repo:
             self.stems.add(os.path.splitext(f)[0])
         self.shallow = git(self.root, "rev-parse", "--is-shallow-repository").strip() == "true"
         self._ignored = {}
+
+    def resolves_anywhere(self, ref):
+        """True when some tracked file or folder ends with this relative path (a package-relative or aliased name)."""
+        tail = "/" + ref.strip("/")
+        for p in self.file_set | self.dir_set | self.stems:
+            if p.endswith(tail):
+                return True
+        return False
 
     def exists(self, path):
         p = path.strip("/")
@@ -231,18 +258,27 @@ def check_paths(repo, files):
             text = read_text(repo, af)
         except OSError:
             continue
+        elsewhere = set()  # first path segments this file has said live somewhere else
         for line_no, ref, line in references(text):
             cands = resolve_candidates(af, ref)
             if any(repo.exists(c) for c in cands):
                 continue
+            head = ref.strip("/").split("/")[0]
+            if says_absent(line) or negated_here(line, ref):
+                elsewhere.add(head)
+                continue
+            if head in elsewhere:
+                continue
             if "/" not in ref.strip("/") and ref in repo.basenames:
+                continue
+            if repo.resolves_anywhere(ref):
                 continue
             if any(repo.ignored(c) for c in cands):
                 continue  # gitignored now: a local or generated path, even if it was once tracked
             basename_only = "/" not in ref.strip("/")
             if basename_only and not CODE_EXT.search(ref):
                 continue  # a bare data or output file name is too often a run-time file
-            if ACCURATE_ABSENCE.search(line):
+            if says_absent(line):
                 continue
             hist = None
             # nested agent file: history must prove the path next to it, unless the reference
@@ -283,10 +319,20 @@ def check_scripts(repo, files):
             text = read_text(repo, af)
         except OSError:
             continue
+        in_fence = False
         for i, line in enumerate(text.splitlines(), 1):
-            for m in RUN_CMD.finditer(line):
+            if FENCE.match(line):
+                in_fence = not in_fence
+                fence_moved = False
+                continue
+            if in_fence and re.search(r"(^|\s)cd\s", line):
+                fence_moved = True  # commands after a cd run in some other folder or repository
+            if in_fence and fence_moved:
+                continue
+            code = [line] if in_fence else [m.group(1) for m in CODE_SPAN.finditer(line)]
+            for m in (mm for c in code for mm in RUN_CMD.finditer(c)):
                 name = m.group(2).rstrip(".:")
-                if name in scripts or PLACEHOLDER.search(name) or ACCURATE_ABSENCE.search(line):
+                if name in scripts or PLACEHOLDER.search(name) or says_absent(line):
                     continue
                 findings.append({
                     "kind": "missing-script", "file": af, "line": i, "ref": f"{m.group(1)} run {name}",
@@ -318,7 +364,7 @@ def check_diff(repo, files, diff_range):
         except OSError:
             continue
         for line_no, ref, line in references(text):
-            if ACCURATE_ABSENCE.search(line):
+            if says_absent(line):
                 continue
             cands = resolve_candidates(af, ref)
             bare = "/" not in ref.strip("/")
@@ -392,6 +438,8 @@ def main(argv=None):
     ap.add_argument("--only-diff", action="store_true", help="with --diff, report only pr-breaks findings")
     ap.add_argument("--format", choices=["text", "md", "json", "github"], default="text")
     ap.add_argument("--no-footer", action="store_true")
+    ap.add_argument("--experimental-scripts", action="store_true",
+                    help="also check npm/pnpm/yarn/bun run scripts (low precision in testing; off by default)")
     ap.add_argument("--fail-on-findings", action="store_true", help="exit 1 when anything is found")
     ap.add_argument("--version", action="version", version=VERSION)
     a = ap.parse_args(argv)
@@ -403,7 +451,9 @@ def main(argv=None):
     files = agent_files(repo)
     findings = []
     if not a.only_diff:
-        findings += check_paths(repo, files) + check_scripts(repo, files)
+        findings += check_paths(repo, files)
+        if a.experimental_scripts:
+            findings += check_scripts(repo, files)
     if a.diff:
         findings += check_diff(repo, files, a.diff)
     findings.sort(key=lambda f: (f["file"], f["line"], f["kind"]))
