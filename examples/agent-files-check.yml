@@ -1,0 +1,16 @@
+# Copy to .github/workflows/agent-files-check.yml
+name: agent files check
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # the check reads git history to prove what moved or was deleted
+      - uses: lesshands/agent-files-check@v0

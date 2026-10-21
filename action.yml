@@ -1,0 +1,37 @@
+name: agent-files-check
+description: Flag places where CLAUDE.md, AGENTS.md, Cursor, Copilot and other agent instruction files no longer match the code.
+branding:
+  icon: check-square
+  color: green
+inputs:
+  path:
+    description: Path inside the checked-out repository.
+    default: "."
+  fail-on-findings:
+    description: Set to "true" to fail the job when anything is found.
+    default: "false"
+  pull-request-only:
+    description: On pull requests, report only what this change breaks (not older drift).
+    default: "false"
+runs:
+  using: composite
+  steps:
+    - name: Check agent instruction files
+      shell: bash
+      env:
+        AFC_PATH: ${{ inputs.path }}
+        AFC_FAIL: ${{ inputs.fail-on-findings }}
+        AFC_PR_ONLY: ${{ inputs.pull-request-only }}
+        AFC_BASE: ${{ github.event.pull_request.base.sha }}
+        AFC_HEAD: ${{ github.event.pull_request.head.sha }}
+      run: |
+        set -euo pipefail
+        args=("$AFC_PATH")
+        if [ -n "${AFC_BASE:-}" ] && [ -n "${AFC_HEAD:-}" ]; then
+          args+=(--diff "$AFC_BASE...$AFC_HEAD")
+          [ "$AFC_PR_ONLY" = "true" ] && args+=(--only-diff)
+        fi
+        script="$GITHUB_ACTION_PATH/agent_files_check.py"
+        python3 "$script" "${args[@]}" --format github || true
+        python3 "$script" "${args[@]}" --format md >> "$GITHUB_STEP_SUMMARY"
+        if [ "$AFC_FAIL" = "true" ]; then python3 "$script" "${args[@]}" --format text --no-footer --fail-on-findings; fi
