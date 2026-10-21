@@ -1,0 +1,102 @@
+[
+ {
+  "id": 0,
+  "set": "heldout",
+  "repo": "BerriAI/litellm",
+  "clone": "repos/BerriAI__litellm",
+  "agent_file": "litellm/proxy/_experimental/mcp_server/AGENTS.md",
+  "line": 99,
+  "reference": "tests/mcp_tests/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 1,
+  "set": "heldout",
+  "repo": "Significant-Gravitas/AutoGPT",
+  "clone": "repos/Significant-Gravitas__AutoGPT",
+  "agent_file": "classic/CLAUDE.md",
+  "line": 115,
+  "reference": "benchmark/agbenchmark/challenges/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 2,
+  "set": "heldout",
+  "repo": "Significant-Gravitas/AutoGPT",
+  "clone": "repos/Significant-Gravitas__AutoGPT",
+  "agent_file": "docs/AGENTS.md",
+  "line": 18,
+  "reference": "docs/integrations/basic.md",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 3,
+  "set": "heldout",
+  "repo": "affaan-m/ECC",
+  "clone": "repos/affaan-m__ECC",
+  "agent_file": ".cursor/rules/common-hooks.md",
+  "line": 19,
+  "reference": ".claude/settings.json",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 4,
+  "set": "heldout",
+  "repo": "coollabsio/coolify",
+  "clone": "repos/coollabsio__coolify",
+  "agent_file": ".cursor/rules/coolify-ai-docs.mdc",
+  "line": 15,
+  "reference": ".ai/README.md",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 5,
+  "set": "heldout",
+  "repo": "coollabsio/coolify",
+  "clone": "repos/coollabsio__coolify",
+  "agent_file": ".cursor/rules/coolify-ai-docs.mdc",
+  "line": 23,
+  "reference": ".ai/core/technology-stack.md",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 6,
+  "set": "heldout",
+  "repo": "coollabsio/coolify",
+  "clone": "repos/coollabsio__coolify",
+  "agent_file": ".cursor/rules/coolify-ai-docs.mdc",
+  "line": 24,
+  "reference": ".ai/core/project-overview.md",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 7,
+  "set": "heldout",
+  "repo": "coollabsio/coolify",
+  "clone": "repos/coollabsio__coolify",
+  "agent_file": ".cursor/rules/coolify-ai-docs.mdc",
+  "line": 25,
+  "reference": ".ai/core/application-architecture.md",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 8,
+  "set": "heldout",
+  "repo": "coollabsio/coolify",
+  "clone": "repos/coollabsio__coolify",
+  "agent_file": ".cursor/rules/coolify-ai-docs.mdc",
+  "line": 26,
+  "reference": ".ai/core/deployment-architecture.md",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 9,
+  "set": "heldout",
+  "repo": "coollabsio/coolify",
+  "clone": "repos/coollabsio__coolify",
+  "agent_file": ".cursor/rules/coolify-ai-docs.mdc",
+  "line": 29,
+  "reference": ".ai/development/development-workflow.md",
+  "kind": "moved-or-deleted"
+ }
+]

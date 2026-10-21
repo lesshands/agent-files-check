@@ -1,0 +1,239 @@
+[
+ {
+  "kind": "moved-or-deleted",
+  "file": "skills/AGENTS.md",
+  "line": 8,
+  "ref": "skills/github/",
+  "evidence": {
+   "commit": "c49fa88b80",
+   "date": "2026-08-30",
+   "subject": "refactor(skills): shipped-set slim \u2014 15 to optional, github 6-way merge, pdf absorbs OCR, channel-ga",
+   "moved_to": "skills/web"
+  },
+  "text": "- **`skills/`** \u2014 built-in, loadable by default, organised by category (`skills/github/`, `skills/mlops/`).",
+  "repo": "NousResearch/hermes-agent",
+  "sha": "8dcf6d5b2174e18a7e81227a0df93f76f96204ee"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": "skills/AGENTS.md",
+  "line": 8,
+  "ref": "skills/mlops/",
+  "evidence": {
+   "commit": "c49fa88b80",
+   "date": "2026-08-30",
+   "subject": "refactor(skills): shipped-set slim \u2014 15 to optional, github 6-way merge, pdf absorbs OCR, channel-ga",
+   "moved_to": "skills/web"
+  },
+  "text": "- **`skills/`** \u2014 built-in, loadable by default, organised by category (`skills/github/`, `skills/mlops/`).",
+  "repo": "NousResearch/hermes-agent",
+  "sha": "8dcf6d5b2174e18a7e81227a0df93f76f96204ee"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": "AGENTS.md",
+  "line": 454,
+  "ref": "scripts/convert_properties_to_json.py",
+  "evidence": {
+   "commit": "65a3eeca7",
+   "date": "2025-12-03",
+   "subject": "Toml (#5115)",
+   "moved_to": null
+  },
+  "text": "- Conversion Script: `scripts/convert_properties_to_json.py`",
+  "repo": "Stirling-Tools/Stirling-PDF",
+  "sha": "a7e593728dd9aa81e75318a949789d3c2e9ee754"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": "CLAUDE.md",
+  "line": 454,
+  "ref": "scripts/convert_properties_to_json.py",
+  "evidence": {
+   "commit": "65a3eeca7",
+   "date": "2025-12-03",
+   "subject": "Toml (#5115)",
+   "moved_to": null
+  },
+  "text": "- Conversion Script: `scripts/convert_properties_to_json.py`",
+  "repo": "Stirling-Tools/Stirling-PDF",
+  "sha": "a7e593728dd9aa81e75318a949789d3c2e9ee754"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": "packages/omo-native/AGENTS.md",
+  "line": 53,
+  "ref": "bin/omo-agent-toolkit.js",
+  "evidence": {
+   "commit": "48506e57a",
+   "date": "2026-09-12",
+   "subject": "build(omo-native): remove Native toolkit CLI payload",
+   "moved_to": null
+  },
+  "text": "- `bin/omo-agent-toolkit.js` - internal delegate to the staged toolkit runtime, NOT an npm bin",
+  "repo": "code-yeongyu/oh-my-openagent",
+  "sha": "d86d06e94fb4ba67ae5b451b96db7634af75de78"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": "CLAUDE.md",
+  "line": 45,
+  "ref": "docs/research/",
+  "evidence": {
+   "commit": "7c23dab64",
+   "date": "2026-06-29",
+   "subject": "Release v3.8.40",
+   "moved_to": null
+  },
+  "text": "| Research (`deep-research`, ad-hoc) | `docs/research/`          | `_tasks/research/\u2026`                                           |",
+  "repo": "diegosouzapw/OmniRoute",
+  "sha": "366589e7574bfc1b64c9540c450c754388f5f88f"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": "AGENTS.md",
+  "line": 81,
+  "ref": "db_models.py",
+  "evidence": {
+   "commit": "efbb80074",
+   "date": "2026-09-28",
+   "subject": "refactor: remove more python codes (#20306)",
+   "moved_to": null
+  },
+  "text": "- A Python model existing does not mean Python owns that table's constraints. `pipeline_operation_log` has no `run_count` column and no unique index in `db_models.py`; both are added only by `internal/dao/migration.go`.",
+  "repo": "infiniflow/ragflow",
+  "sha": "5cb4abb40a455ff3359171bbaaedbd9c73d189ef"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": ".github/workflows/CLAUDE.md",
+  "line": 28,
+  "ref": "src/deps/",
+  "evidence": {
+   "commit": "e643d7b085",
+   "date": "2026-05-04",
+   "subject": "restructure src/: path fixups + extract JSC bridges and leaf types",
+   "moved_to": null
+  },
+  "text": "- `src/deps/` - Dependencies (third-party)",
+  "repo": "oven-sh/bun",
+  "sha": "d7562f260d41baf9b7004abca0ac26c1522f9808"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": "AGENTS.md",
+  "line": 142,
+  "ref": "src/shell/",
+  "evidence": {
+   "commit": "23427dbc12",
+   "date": "2026-05-14",
+   "subject": "Rewrite Bun in Rust (#30412)",
+   "moved_to": "src/runtime/shell"
+  },
+  "text": "- `src/shell/` - Cross-platform shell implementation",
+  "repo": "oven-sh/bun",
+  "sha": "d7562f260d41baf9b7004abca0ac26c1522f9808"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": "AGENTS.md",
+  "line": 146,
+  "ref": "src/bake/",
+  "evidence": {
+   "commit": "23427dbc12",
+   "date": "2026-05-14",
+   "subject": "Rewrite Bun in Rust (#30412)",
+   "moved_to": "src/runtime/bake"
+  },
+  "text": "- `src/bake/` - Server-side rendering / dev server framework",
+  "repo": "oven-sh/bun",
+  "sha": "d7562f260d41baf9b7004abca0ac26c1522f9808"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": "CLAUDE.md",
+  "line": 142,
+  "ref": "src/shell/",
+  "evidence": {
+   "commit": "23427dbc12",
+   "date": "2026-05-14",
+   "subject": "Rewrite Bun in Rust (#30412)",
+   "moved_to": "src/runtime/shell"
+  },
+  "text": "- `src/shell/` - Cross-platform shell implementation",
+  "repo": "oven-sh/bun",
+  "sha": "d7562f260d41baf9b7004abca0ac26c1522f9808"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": "CLAUDE.md",
+  "line": 146,
+  "ref": "src/bake/",
+  "evidence": {
+   "commit": "23427dbc12",
+   "date": "2026-05-14",
+   "subject": "Rewrite Bun in Rust (#30412)",
+   "moved_to": "src/runtime/bake"
+  },
+  "text": "- `src/bake/` - Server-side rendering / dev server framework",
+  "repo": "oven-sh/bun",
+  "sha": "d7562f260d41baf9b7004abca0ac26c1522f9808"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": "CLAUDE.md",
+  "line": 339,
+  "ref": "sub-pages-data.js",
+  "evidence": {
+   "commit": "90f9eeb9",
+   "date": "2026-07-20",
+   "subject": "Split service layer into private impeccable-site repo",
+   "moved_to": null
+  },
+  "text": "8. Add its relationships to `COMMAND_RELATIONSHIPS` in impeccable-site's `sub-pages-data.js`",
+  "repo": "pbakaus/impeccable",
+  "sha": "6af45ac9a5eb8792f033d3242f52e99812fd91fa"
+ },
+ {
+  "kind": "missing-script",
+  "file": "CLAUDE.md",
+  "line": 310,
+  "ref": "bun run skill:publish-pointer",
+  "evidence": {
+   "package_json_files": 74
+  },
+  "text": "5. Skill only: `npx impeccable install` / `update` serve the version in impeccable-site's `published-skill.json`, a signed pointer that does not follow the release by itself (site `docs/PUBLISHED-SKILL.md`). On a branch from site main, run ",
+  "repo": "pbakaus/impeccable",
+  "sha": "6af45ac9a5eb8792f033d3242f52e99812fd91fa"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": ".cursorrules",
+  "line": 15,
+  "ref": "code/vitest.workspace.ts",
+  "evidence": {
+   "commit": "848bd4177b",
+   "date": "2025-11-18",
+   "subject": "Build: Use projects instead of workspaces in Vitest",
+   "moved_to": "code/vitest.shared.ts"
+  },
+  "text": "- Vitest configuration is in `code/vitest.workspace.ts`",
+  "repo": "storybookjs/storybook",
+  "sha": "7cbbd9ff5e13c70200c155a15076799bbf838105"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": ".cursorrules",
+  "line": 29,
+  "ref": "code/vitest.workspace.ts",
+  "evidence": {
+   "commit": "848bd4177b",
+   "date": "2025-11-18",
+   "subject": "Build: Use projects instead of workspaces in Vitest",
+   "moved_to": "code/vitest.shared.ts"
+  },
+  "text": "- Workspace configuration: `./code/vitest.workspace.ts`",
+  "repo": "storybookjs/storybook",
+  "sha": "7cbbd9ff5e13c70200c155a15076799bbf838105"
+ }
+]

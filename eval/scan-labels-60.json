@@ -1,0 +1,482 @@
+[
+ {
+  "repo": "oven-sh/bun",
+  "file": "AGENTS.md",
+  "line": 198,
+  "ref": ".test.tsx",
+  "label": "FP-EXAMPLE",
+  "reason": "filename suffix rule: \"test must end in `.test.ts` or `.test.tsx`\""
+ },
+ {
+  "repo": "NousResearch/hermes-agent",
+  "file": "hermes_cli/AGENTS.md",
+  "line": 111,
+  "ref": "config.yaml",
+  "label": "FP-CREATE",
+  "reason": "test fixture: \"one invariant test sets it in a temp `config.yaml`\""
+ },
+ {
+  "repo": "netdata/netdata",
+  "file": "AGENTS.md",
+  "line": 343,
+  "ref": ".agents/sow/q/done/",
+  "label": "FP-CREATE",
+  "reason": "local SOW queue, gitignored (/.agents/sow/q): \"then move it to `.agents/sow/q/done/`\""
+ },
+ {
+  "repo": "JuliusBrussee/caveman",
+  "file": "CLAUDE.md",
+  "line": 250,
+  "ref": ".caveman/config.json",
+  "label": "FP-EXTERNAL",
+  "reason": "user-repo config looked up at runtime: \"walks up from start ... first `.caveman/config.json`\""
+ },
+ {
+  "repo": "debpalash/VoiceStudio",
+  "file": "CLAUDE.md",
+  "line": 114,
+  "ref": "debpalash/VoiceStudio",
+  "label": "FP-EXTERNAL",
+  "reason": "GitHub owner/repo name: \"GitHub Issues on `debpalash/VoiceStudio`, via the gh CLI\""
+ },
+ {
+  "repo": "Shubhamsaboo/awesome-llm-apps",
+  "file": "generative_ui_agents/generative-ui-starter-project/CLAUDE.md",
+  "line": 187,
+  "ref": "src/components/canvas/todo-list.tsx",
+  "label": "STALE",
+  "reason": "\"Todo List (`src/components/canvas/todo-list.tsx`)\"; file now at src/components/example-canvas/todo-list.tsx (moved)"
+ },
+ {
+  "repo": "netdata/netdata",
+  "file": "GEMINI.md",
+  "line": 239,
+  "ref": "specs/",
+  "label": "FP-CREATE",
+  "reason": "gitignored local SOW dir (/.agents/sow/specs): \"moves worktree-local `q/`, `specs/`, and `.local/` content\""
+ },
+ {
+  "repo": "twentyhq/twenty",
+  "file": "packages/create-twenty-app/src/constants/template/AGENTS.md",
+  "line": 130,
+  "ref": "twenty-sdk/define",
+  "label": "FP-EXTERNAL",
+  "reason": "npm package subpath: \"The `isDefined` exported by `twenty-sdk/define`\""
+ },
+ {
+  "repo": "usememos/memos",
+  "file": "AGENTS.md",
+  "line": 109,
+  "ref": ".proto",
+  "label": "FP-EXAMPLE",
+  "reason": "file-type pattern in table: \"`.proto` source, generated outputs\""
+ },
+ {
+  "repo": "elastic/elasticsearch",
+  "file": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/AGENTS.md",
+  "line": 55,
+  "ref": "ltr/MlLTRNamedXContentProvider",
+  "label": "FP-RESOLVE",
+  "reason": "exists as ltr/MlLTRNamedXContentProvider.java; listed without extension, and repo tree was truncated"
+ },
+ {
+  "repo": "diegosouzapw/OmniRoute",
+  "file": "AGENTS.md",
+  "line": 303,
+  "ref": "localDb.ts",
+  "label": "STALE",
+  "reason": "\"Never barrel-import from `localDb.ts`\"; barrel deleted 2026-08-30 (commit 50bc8ab8), rule now points at nothing"
+ },
+ {
+  "repo": "elastic/elasticsearch",
+  "file": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/AGENTS.md",
+  "line": 26,
+  "ref": "x-pack/plugin/ml",
+  "label": "FP-RESOLVE",
+  "reason": "x-pack/plugin/ml exists; scanner's recursive tree for elasticsearch was truncated"
+ },
+ {
+  "repo": "mem0ai/mem0",
+  "file": "AGENTS.md",
+  "line": 118,
+  "ref": "feature/",
+  "label": "FP-EXTERNAL",
+  "reason": "git branch prefix: \"branch from `main` (`feature/...`, `fix/...`)\""
+ },
+ {
+  "repo": "diegosouzapw/OmniRoute",
+  "file": "CLAUDE.md",
+  "line": 56,
+  "ref": "_artifacts/",
+  "label": "FP-CREATE",
+  "reason": "gitignored scratch dir: \"`_artifacts/` is a root `_*` path: already gitignored ... never tracked\""
+ },
+ {
+  "repo": "diegosouzapw/OmniRoute",
+  "file": "CLAUDE.md",
+  "line": 45,
+  "ref": "_tasks/research/…",
+  "label": "FP-EXTERNAL",
+  "reason": "_tasks is a separate private git repo, gitignored: \"Research ... `_tasks/research/…`\""
+ },
+ {
+  "repo": "ghostty-org/ghostty",
+  "file": "example/AGENTS.md",
+  "line": 4,
+  "ref": ".zig",
+  "label": "FP-EXAMPLE",
+  "reason": "extension alternative: \"`src/main.c` (or `.zig`)\""
+ },
+ {
+  "repo": "infiniflow/ragflow",
+  "file": "AGENTS.md",
+  "line": 132,
+  "ref": "ragflow_deps/cl100k_base.tiktoken",
+  "label": "FP-CREATE",
+  "reason": "downloaded asset, gitignored: \"`ragflow_deps/cl100k_base.tiktoken` come from ... download_deps.py\""
+ },
+ {
+  "repo": "diegosouzapw/OmniRoute",
+  "file": "docs/i18n/bg/CLAUDE.md",
+  "line": 40,
+  "ref": "_tasks/",
+  "label": "FP-EXTERNAL",
+  "reason": "Bulgarian translation; `_tasks/` is a separate private repo, gitignored (/_tasks)"
+ },
+ {
+  "repo": "JuliusBrussee/caveman",
+  "file": "CLAUDE.md",
+  "line": 181,
+  "ref": ".github/copilot-instructions.md",
+  "label": "FP-EXAMPLE",
+  "reason": "named only as removed, text is accurate: \"We removed the agent-specific dotdir mirrors ... `.github/copilot-instructions.md`\""
+ },
+ {
+  "repo": "netdata/netdata",
+  "file": "GEMINI.md",
+  "line": 221,
+  "ref": ".agents/sow/q/",
+  "label": "FP-CREATE",
+  "reason": "gitignored local queue dir: \"Queues under `.agents/sow/q/`\""
+ },
+ {
+  "repo": "netdata/netdata",
+  "file": "src/go/plugin/ibm.d/CLAUDE.md",
+  "line": 90,
+  "ref": ".go",
+  "label": "FP-EXAMPLE",
+  "reason": "file-type pattern: \"Implementation `.go` files (no regeneration needed)\""
+ },
+ {
+  "repo": "pbakaus/impeccable",
+  "file": "CLAUDE.md",
+  "line": 21,
+  "ref": "skill/scripts/bin/",
+  "label": "FP-CREATE",
+  "reason": "gitignored binaries: \"`skill/scripts/bin/` ... are gitignored ... users get the binary on first run\""
+ },
+ {
+  "repo": "diegosouzapw/OmniRoute",
+  "file": "CLAUDE.md",
+  "line": 36,
+  "ref": "_tasks/",
+  "label": "FP-EXTERNAL",
+  "reason": "\"The `_tasks/` convention\"; _tasks is a separate private git repo, gitignored"
+ },
+ {
+  "repo": "diegosouzapw/OmniRoute",
+  "file": "docs/i18n/am/CLAUDE.md",
+  "line": 64,
+  "ref": "_tasks/",
+  "label": "FP-EXTERNAL",
+  "reason": "Amharic translation; `_tasks/` described as its own private git repo, gitignored"
+ },
+ {
+  "repo": "avelino/awesome-go",
+  "file": ".cursorrules",
+  "line": 38,
+  "ref": ".github/scripts/check-quality.js",
+  "label": "STALE",
+  "reason": "\"workflow will run `.github/scripts/check-quality.js`\"; migrated to .github/scripts/check-quality/main.go (f74f1806, Feb 2026)"
+ },
+ {
+  "repo": "JuliusBrussee/caveman",
+  "file": "CLAUDE.md",
+  "line": 183,
+  "ref": ".agents/",
+  "label": "STALE",
+  "reason": "\"dotdir leftovers (... `.agents/`) still hold a stale ... mirror\"; dirs removed 2026-06-12 (eb447dad)"
+ },
+ {
+  "repo": "code-yeongyu/oh-my-openagent",
+  "file": "AGENTS.md",
+  "line": 457,
+  "ref": ".sisyphus/",
+  "label": "FP-CREATE",
+  "reason": "runtime workspace state in user projects: \"Runtime state migrated from `.sisyphus/` → `.omo/`\""
+ },
+ {
+  "repo": "JuliusBrussee/caveman",
+  "file": "CLAUDE.md",
+  "line": 308,
+  "ref": "settings.json",
+  "label": "FP-EXTERNAL",
+  "reason": "Claude Code user settings, not in repo: \"Configured in `settings.json` under `statusLine.command`\""
+ },
+ {
+  "repo": "microsoft/generative-ai-for-beginners",
+  "file": "translations/el/AGENTS.md",
+  "line": 163,
+  "ref": "../../url",
+  "label": "FP-EXAMPLE",
+  "reason": "placeholder link format: \"URLs must be in form `[text](../../url)`\" (Greek)"
+ },
+ {
+  "repo": "ant-design/ant-design",
+  "file": ".github/copilot-instructions.md",
+  "line": 132,
+  "ref": "../",
+  "label": "FP-EXAMPLE",
+  "reason": "import-style pattern: \"use relative paths (`../`, `../../_util/...`)\""
+ },
+ {
+  "repo": "Stirling-Tools/Stirling-PDF",
+  "file": "AGENTS.md",
+  "line": 234,
+  "ref": "services/billing",
+  "label": "FP-RESOLVE",
+  "reason": "@app/* alias seam; exists as frontend/editor/src/{cloud,saas,desktop}/services/billing.ts"
+ },
+ {
+  "repo": "appwrite/appwrite",
+  "file": "apps/console/AGENTS.md",
+  "line": 565,
+  "ref": "src/Appwrite/Cloud/Platform/Modules/Agent",
+  "label": "FP-EXTERNAL",
+  "reason": "path in the separate Cloud repo: \"has not merged into cloud main ... `src/Appwrite/Cloud/Platform/Modules/Agent`\""
+ },
+ {
+  "repo": "netdata/netdata",
+  "file": "AGENTS.md",
+  "line": 881,
+  "ref": "pr-reviews/",
+  "label": "FP-CREATE",
+  "reason": "private per-skill cache dir in a table of uncommitted outputs: \"`pr-reviews/` | per-PR comment and review caches\""
+ },
+ {
+  "repo": "ZhuLinsen/daily_stock_analysis",
+  "file": "CLAUDE.md",
+  "line": 72,
+  "ref": "src/reports/",
+  "label": "STALE",
+  "reason": "project layout lists \"`src/reports/`：报告生成\"; no src/reports at sha and no commit history for it"
+ },
+ {
+  "repo": "diegosouzapw/OmniRoute",
+  "file": "docs/i18n/ar/CLAUDE.md",
+  "line": 16,
+  "ref": ".claude/worktrees/",
+  "label": "FP-CREATE",
+  "reason": "worktree dir created at runtime: \"canonical path `.claude/worktrees/`\" (Arabic)"
+ },
+ {
+  "repo": "microsoft/PowerToys",
+  "file": ".github/instructions/prompt.instructions.md",
+  "line": 62,
+  "ref": "docs/architecture-decisions/record-XXXX.md",
+  "label": "FP-EXAMPLE",
+  "reason": "illustrative: \"such as `docs/architecture-decisions/record-XXXX.md`\""
+ },
+ {
+  "repo": "marktext/marktext",
+  "file": "packages/muya/AGENTS.md",
+  "line": 43,
+  "ref": "compositionstart/end",
+  "label": "FP-EXTERNAL",
+  "reason": "DOM event names, not a path: \"(`click`, `input`, `keydown`, `keyup`, `compositionstart/end`)\""
+ },
+ {
+  "repo": "openclaw/openclaw",
+  "file": "apps/android/AGENTS.md",
+  "line": 23,
+  "ref": ".txt",
+  "label": "FP-EXAMPLE",
+  "reason": "file-type pattern: \"discovers bundled `.txt` files at runtime\""
+ },
+ {
+  "repo": "louislam/uptime-kuma",
+  "file": ".github/copilot-instructions.md",
+  "line": 210,
+  "ref": "private/",
+  "label": "FP-CREATE",
+  "reason": "never-commit list: \"Never commit: `data/`, `dist/`, `tmp/`, `private/`\""
+ },
+ {
+  "repo": "JuliusBrussee/caveman",
+  "file": "CLAUDE.md",
+  "line": 183,
+  "ref": ".roo/",
+  "label": "STALE",
+  "reason": "\"dotdir leftovers (... `.roo/` ...) still hold a stale ... mirror\"; removed 2026-06-12 (eb447dad)"
+ },
+ {
+  "repo": "git/git",
+  "file": "po/AGENTS.md",
+  "line": 525,
+  "ref": "po/l10n-todo.json",
+  "label": "FP-CREATE",
+  "reason": "script output: \"It writes `po/l10n-todo.json`\""
+ },
+ {
+  "repo": "openclaw/openclaw",
+  "file": "docs/reference/templates/AGENTS.md",
+  "line": 75,
+  "ref": "MEMORY.md",
+  "label": "FP-CREATE",
+  "reason": "workspace template; agent maintains it: \"durable non-profile facts into `MEMORY.md`\""
+ },
+ {
+  "repo": "microsoft/vscode",
+  "file": ".github/instructions/buildNext.instructions.md",
+  "line": 305,
+  "ref": "vs/code/electron-browser/workbench/workbench.js",
+  "label": "FP-CREATE",
+  "reason": "build output in size table; source is src/vs/code/electron-browser/workbench/workbench.ts"
+ },
+ {
+  "repo": "storytold/photocraft",
+  "file": "AGENTS.md",
+  "line": 65,
+  "ref": "../craftrules/standards/fonts.md",
+  "label": "FP-EXTERNAL",
+  "reason": "sibling repo: \"fonts live in storytold/craft-fonts (rules: `../craftrules/standards/fonts.md`)\""
+ },
+ {
+  "repo": "gohugoio/hugo",
+  "file": "docs/AGENTS.md",
+  "line": 8,
+  "ref": ".css",
+  "label": "FP-EXAMPLE",
+  "reason": "file-type pattern: \"NEVER write raw CSS in `.css` files\""
+ },
+ {
+  "repo": "louislam/uptime-kuma",
+  "file": ".github/copilot-instructions.md",
+  "line": 165,
+  "ref": "YYYY-MM-DD-HHMM-description.js",
+  "label": "FP-EXAMPLE",
+  "reason": "filename pattern: \"filenames are `YYYY-MM-DD-HHMM-description.js`\""
+ },
+ {
+  "repo": "bytedance/deer-flow",
+  "file": "backend/packages/harness/deerflow/agents/middlewares/AGENTS.md",
+  "line": 31,
+  "ref": "../lead_agent/agent.py::build_middlewares",
+  "label": "FP-RESOLVE",
+  "reason": "lead_agent/agent.py exists; `::build_middlewares` suffix broke the match"
+ },
+ {
+  "repo": "netdata/netdata",
+  "file": "src/go/GEMINI.md",
+  "line": 123,
+  "ref": "ns/op",
+  "label": "FP-EXTERNAL",
+  "reason": "benchmark unit, not a path: \"`ns/op` is a dev-machine trend indicator\""
+ },
+ {
+  "repo": "storybookjs/storybook",
+  "file": "AGENTS.md",
+  "line": 11,
+  "ref": "storybook/internal/node-logger",
+  "label": "FP-EXTERNAL",
+  "reason": "package import specifier: \"Log through `storybook/internal/node-logger`\""
+ },
+ {
+  "repo": "netdata/netdata",
+  "file": "GEMINI.md",
+  "line": 523,
+  "ref": "specs/",
+  "label": "FP-CREATE",
+  "reason": "gitignored dir: \"a `q/` or `specs/` path that is not gitignored\""
+ },
+ {
+  "repo": "appwrite/appwrite",
+  "file": "apps/console/AGENTS.md",
+  "line": 33,
+  "ref": "spec.json",
+  "label": "FP-EXTERNAL",
+  "reason": "file inside the pinned SDK package: \"over the pinned SDK's `spec.json`\""
+ },
+ {
+  "repo": "bytedance/deer-flow",
+  "file": "backend/packages/harness/deerflow/agents/memory/AGENTS.md",
+  "line": 57,
+  "ref": "memory.json",
+  "label": "FP-CREATE",
+  "reason": "runtime storage file: \"`memory.json` stores only shared summaries\""
+ },
+ {
+  "repo": "webpack/webpack",
+  "file": "AGENTS.md",
+  "line": 191,
+  "ref": "n/a",
+  "label": "FP-EXTERNAL",
+  "reason": "literal text, not a path: \"`n/a` where one doesn't apply\""
+ },
+ {
+  "repo": "microsoft/generative-ai-for-beginners",
+  "file": "translations/el/AGENTS.md",
+  "line": 263,
+  "ref": "mcr.microsoft.com/devcontainers/universal:2.11.2",
+  "label": "FP-EXTERNAL",
+  "reason": "container image: \"based on `mcr.microsoft.com/devcontainers/universal:2.11.2`\""
+ },
+ {
+  "repo": "nexu-io/open-design",
+  "file": "AGENTS.md",
+  "line": 244,
+  "ref": "preview/latest",
+  "label": "FP-EXTERNAL",
+  "reason": "R2 release-channel feed path: \"publish updater feeds under `preview/latest`\""
+ },
+ {
+  "repo": "localsend/localsend",
+  "file": "AGENTS.md",
+  "line": 92,
+  "ref": ".mapper.dart",
+  "label": "FP-EXAMPLE",
+  "reason": "filename suffix pattern (31 such files exist): \"`.mapper.dart` parts\""
+ },
+ {
+  "repo": "louislam/uptime-kuma",
+  "file": ".github/copilot-instructions.md",
+  "line": 130,
+  "ref": "jsdoc/require-jsdoc",
+  "label": "FP-EXTERNAL",
+  "reason": "ESLint rule name: \"(`jsdoc/require-jsdoc`)\""
+ },
+ {
+  "repo": "modelcontextprotocol/servers",
+  "file": "AGENTS.md",
+  "line": 350,
+  "ref": "origin/v2/main",
+  "label": "FP-EXTERNAL",
+  "reason": "git remote ref: \"its branch is `origin/v2/main`\""
+ },
+ {
+  "repo": "pbakaus/impeccable",
+  "file": "CLAUDE.md",
+  "line": 28,
+  "ref": "personas.md",
+  "label": "FP-EXAMPLE",
+  "reason": "named only as removed, text is accurate: \"v4 removed ... `personas.md`\""
+ },
+ {
+  "repo": "git/git",
+  "file": "po/AGENTS.md",
+  "line": 562,
+  "ref": "po/l10n-todo.json",
+  "label": "FP-CREATE",
+  "reason": "script output batch file: \"Translate JSON batch (`po/l10n-todo.json` → ...)\""
+ }
+]

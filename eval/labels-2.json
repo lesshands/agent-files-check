@@ -1,0 +1,12 @@
+[
+ {"id": 0, "label": "STALE", "reason": "Text tells agents to extend scenarios 'that already live' in tests/mcp_tests/, but the folder is gone; its tests went to tests/unit and tests/integration/mcp (ba77646991, 102619d47a, 2026-10-11).", "moved_to": "tests/integration/mcp/ (integration scenarios; provider-independent ones to tests/unit/)"},
+ {"id": 1, "label": "STALE", "reason": "classic/benchmark/ was removed in e33b1e210; the challenge test cases now live in classic/direct_benchmark/challenges/.", "moved_to": "classic/direct_benchmark/challenges/"},
+ {"id": 2, "label": "STALE", "reason": "The example names a real block doc with MANUAL sections, but docs/integrations/basic.md was moved in 90466908a; it is now docs/integrations/block-integrations/basic.md (174 MANUAL markers).", "moved_to": "docs/integrations/block-integrations/basic.md"},
+ {"id": 3, "label": "FP-ACCURATE", "reason": "The sentence means the user's ~/.claude/settings.json or 'a project's' .claude/settings.json, which is a generic user config and not a file in this repo.", "moved_to": null},
+ {"id": 4, "label": "STALE", "reason": "Rule says Cursor should start at .ai/README.md, but 3a0098459 ('cleanup AI instructions') deleted it with no replacement; .ai/ holds only lessons.md.", "moved_to": null},
+ {"id": 5, "label": "STALE", "reason": ".ai/core/technology-stack.md was deleted in 3a0098459 with no replacement; the rule still links it as the single source of truth.", "moved_to": null},
+ {"id": 6, "label": "STALE", "reason": ".ai/core/project-overview.md was deleted in 3a0098459 with no replacement.", "moved_to": null},
+ {"id": 7, "label": "STALE", "reason": ".ai/core/application-architecture.md was deleted in 3a0098459 with no replacement.", "moved_to": null},
+ {"id": 8, "label": "STALE", "reason": ".ai/core/deployment-architecture.md was deleted in 3a0098459 with no replacement.", "moved_to": null},
+ {"id": 9, "label": "STALE", "reason": ".ai/development/development-workflow.md was deleted in 3a0098459 with no replacement.", "moved_to": null}
+]

@@ -1,0 +1,668 @@
+[
+ {
+  "id": 0,
+  "label": "FP-ACCURATE",
+  "reason": "Describes per-repo file written into the user's repo by the installer via --with-init, not a file in this repo.",
+  "moved_to": null
+ },
+ {
+  "id": 1,
+  "label": "FP-ACCURATE",
+  "reason": "Per-repo .windsurf rule is generated in the user's repo via --with-init; not claimed to exist here.",
+  "moved_to": null
+ },
+ {
+  "id": 2,
+  "label": "FP-ACCURATE",
+  "reason": "Per-repo .clinerules file is generated in the user's repo via --with-init; not claimed to exist here.",
+  "moved_to": null
+ },
+ {
+  "id": 3,
+  "label": "FP-ACCURATE",
+  "reason": "Sentence says the base skill 'previously' lived there and was folded into evm (commit e3fc081499).",
+  "moved_to": null
+ },
+ {
+  "id": 4,
+  "label": "STALE",
+  "reason": "skills/github/ cited as a category example; removed in c49fa88b80, github skill now at skills/software-development/github/.",
+  "moved_to": "skills/software-development/github/"
+ },
+ {
+  "id": 5,
+  "label": "STALE",
+  "reason": "skills/mlops/ cited as a built-in category; no skills/mlops now, mlops skills live under optional-skills/mlops/.",
+  "moved_to": "optional-skills/mlops/"
+ },
+ {
+  "id": 6,
+  "label": "FP-ACCURATE",
+  "reason": "Claude Code skill describes settings hierarchy in the user's project, not a file in this repo.",
+  "moved_to": null
+ },
+ {
+  "id": 7,
+  "label": "FP-ACCURATE",
+  "reason": "Generic Claude Code doc: configure hooks in the user's project .claude/settings.json.",
+  "moved_to": null
+ },
+ {
+  "id": 8,
+  "label": "FP-ACCURATE",
+  "reason": "Generic Claude Code MCP scope table referring to user project storage.",
+  "moved_to": null
+ },
+ {
+  "id": 9,
+  "label": "FP-ACCURATE",
+  "reason": "Command runs inside a cloned alibaba/page-agent repo (Path 3), not this repo.",
+  "moved_to": null
+ },
+ {
+  "id": 10,
+  "label": "FP-ACCURATE",
+  "reason": "Command runs inside a cloned alibaba/page-agent repo (Path 3), not this repo.",
+  "moved_to": null
+ },
+ {
+  "id": 11,
+  "label": "FP-ACCURATE",
+  "reason": "Command runs inside a cloned alibaba/page-agent repo (Path 3), not this repo.",
+  "moved_to": null
+ },
+ {
+  "id": 12,
+  "label": "FP-ACCURATE",
+  "reason": "Command runs inside a cloned alibaba/page-agent repo (Path 3), not this repo.",
+  "moved_to": null
+ },
+ {
+  "id": 13,
+  "label": "FP-ACCURATE",
+  "reason": "Command runs inside a cloned alibaba/page-agent repo (Path 3), not this repo.",
+  "moved_to": null
+ },
+ {
+  "id": 14,
+  "label": "STALE",
+  "reason": "scripts/convert_properties_to_json.py deleted in 65a3eeca7 (Toml migration); locales are now translation.toml, no replacement converter.",
+  "moved_to": null
+ },
+ {
+  "id": 15,
+  "label": "STALE",
+  "reason": "scripts/convert_properties_to_json.py deleted in 65a3eeca7 (Toml migration); no replacement converter.",
+  "moved_to": null
+ },
+ {
+  "id": 16,
+  "label": "FP-RESOLVES",
+  "reason": "Skill lives in apps/console; apps/console/src/content/docs/ exists (738 files).",
+  "moved_to": null
+ },
+ {
+  "id": 17,
+  "label": "FP-RESOLVES",
+  "reason": "Path is relative to apps/console; apps/console/src/content/docs/ exists.",
+  "moved_to": null
+ },
+ {
+  "id": 18,
+  "label": "FP-RESOLVES",
+  "reason": "Path is relative to apps/console; apps/console/src/content/docs/ exists.",
+  "moved_to": null
+ },
+ {
+  "id": 19,
+  "label": "FP-RESOLVES",
+  "reason": "Path is relative to apps/console; apps/console/src/content/docs/ exists.",
+  "moved_to": null
+ },
+ {
+  "id": 20,
+  "label": "FP-RESOLVES",
+  "reason": "Path is relative to apps/console; apps/console/src/content/docs/ exists.",
+  "moved_to": null
+ },
+ {
+  "id": 21,
+  "label": "FP-RESOLVES",
+  "reason": "Path is relative to apps/console; apps/console/src/content/docs/ exists.",
+  "moved_to": null
+ },
+ {
+  "id": 22,
+  "label": "FP-RESOLVES",
+  "reason": "Path is relative to apps/console; apps/console/src/content/docs/ exists.",
+  "moved_to": null
+ },
+ {
+  "id": 23,
+  "label": "FP-RESOLVES",
+  "reason": "Path is relative to apps/console; apps/console/src/content/docs/ exists.",
+  "moved_to": null
+ },
+ {
+  "id": 24,
+  "label": "FP-RESOLVES",
+  "reason": "Path is relative to apps/console; apps/console/src/content/docs/ exists.",
+  "moved_to": null
+ },
+ {
+  "id": 25,
+  "label": "STALE",
+  "reason": "No 'optimize' script in apps/console/package.json or root package.json (nor in its history); build has no optimize step.",
+  "moved_to": null
+ },
+ {
+  "id": 26,
+  "label": "STALE",
+  "reason": "No 'optimize' script in apps/console/package.json or root package.json.",
+  "moved_to": null
+ },
+ {
+  "id": 27,
+  "label": "FP-RESOLVES",
+  "reason": "Text is `bun run i18n:audit:<lang>` placeholder; apps/console defines i18n:audit:he and i18n:audit:ja.",
+  "moved_to": null
+ },
+ {
+  "id": 28,
+  "label": "FP-RESOLVES",
+  "reason": "`i18n:audit:<lang>` placeholder; i18n:audit:he exists in apps/console/package.json as the example says.",
+  "moved_to": null
+ },
+ {
+  "id": 29,
+  "label": "FP-RESOLVES",
+  "reason": "`i18n:audit:<lang>` placeholder; i18n:audit:he/ja exist in apps/console/package.json.",
+  "moved_to": null
+ },
+ {
+  "id": 30,
+  "label": "FP-RESOLVES",
+  "reason": "`i18n:audit:<lang>` placeholder for the per-language scripts; i18n:audit:he/ja exist in apps/console/package.json.",
+  "moved_to": null
+ },
+ {
+  "id": 31,
+  "label": "FP-RESOLVES",
+  "reason": "Section header says paths are relative to packages/omo-opencode/; packages/omo-opencode/src/plugin/tool-registry.ts exists.",
+  "moved_to": null
+ },
+ {
+  "id": 32,
+  "label": "FP-RESOLVES",
+  "reason": "Paths relative to packages/omo-opencode/ per header; tool-registry.ts exists there.",
+  "moved_to": null
+ },
+ {
+  "id": 33,
+  "label": "FP-ACCURATE",
+  "reason": "helpers.ts named as a banned catch-all filename, not a file reference.",
+  "moved_to": null
+ },
+ {
+  "id": 34,
+  "label": "FP-ACCURATE",
+  "reason": "'Never create ... helpers.ts' is a prohibition, not a reference to a file.",
+  "moved_to": null
+ },
+ {
+  "id": 35,
+  "label": "FP-RESOLVES",
+  "reason": "Paths relative to packages/omo-opencode/ per header; tool-registry.ts exists there.",
+  "moved_to": null
+ },
+ {
+  "id": 36,
+  "label": "FP-RESOLVES",
+  "reason": "Paths relative to packages/omo-opencode/ per header; tool-registry.ts exists there.",
+  "moved_to": null
+ },
+ {
+  "id": 37,
+  "label": "FP-ACCURATE",
+  "reason": "helpers.ts named as a banned catch-all filename, not a file reference.",
+  "moved_to": null
+ },
+ {
+  "id": 38,
+  "label": "FP-ACCURATE",
+  "reason": "'Never create ... helpers.ts' is a prohibition, not a reference to a file.",
+  "moved_to": null
+ },
+ {
+  "id": 39,
+  "label": "FP-RESOLVES",
+  "reason": "\"each component's hooks/hooks.json\" resolves to plugin/components/*/hooks/hooks.json (many exist).",
+  "moved_to": null
+ },
+ {
+  "id": 40,
+  "label": "FP-RESOLVES",
+  "reason": "Component's hooks/hooks.json resolves to plugin/components/*/hooks/hooks.json.",
+  "moved_to": null
+ },
+ {
+  "id": 41,
+  "label": "STALE",
+  "reason": "packages/omo-native/bin/omo-agent-toolkit.js removed in 48506e57a ('remove Native toolkit CLI payload'); bin now has only omo.js, senpi-patch.mjs, lib/.",
+  "moved_to": null
+ },
+ {
+  "id": 42,
+  "label": "FP-ACCURATE",
+  "reason": "Line says the skill is staged into plugin/skills-conditional/ (not plugin/skills/); plugin/skills/ is a gitignored build output as stated.",
+  "moved_to": null
+ },
+ {
+  "id": 43,
+  "label": "FP-ACCURATE",
+  "reason": "references/ui-ux-db/ is a materialized, gitignored corpus (frontend/.gitignore line 25), present only after materialization.",
+  "moved_to": null
+ },
+ {
+  "id": 44,
+  "label": "FP-ACCURATE",
+  "reason": "Warns not to hand-edit shipped copies in packages/omo-senpi/plugin/skills/, a gitignored generated dir; no existence claim misleads.",
+  "moved_to": null
+ },
+ {
+  "id": 45,
+  "label": "FP-RESOLVES",
+  "reason": "`bun run script/generate-changelog.ts` runs a file, not a package script; script/generate-changelog.ts exists.",
+  "moved_to": null
+ },
+ {
+  "id": 46,
+  "label": "FP-RESOLVES",
+  "reason": "`bun run` on a file path; script/print-release-notes.ts exists.",
+  "moved_to": null
+ },
+ {
+  "id": 47,
+  "label": "FP-RESOLVES",
+  "reason": "`bun run` on a file path; script/build-help-schemas.ts exists.",
+  "moved_to": null
+ },
+ {
+  "id": 48,
+  "label": "FP-RESOLVES",
+  "reason": "`bun run` on a file path; packages/omo-opencode/scripts/generate-opengateway-models.ts exists.",
+  "moved_to": null
+ },
+ {
+  "id": 49,
+  "label": "FP-ACCURATE",
+  "reason": "Generic toolchain table: `bun run script.ts` is the pattern for disposable scripts, not a repo script.",
+  "moved_to": null
+ },
+ {
+  "id": 50,
+  "label": "FP-RESOLVES",
+  "reason": "`bun run` on a file relative to the skill dir; skills/programming/scripts/typescript/check-no-excuse-rules.ts exists.",
+  "moved_to": null
+ },
+ {
+  "id": 51,
+  "label": "FP-ACCURATE",
+  "reason": "Refers to the installed upstream dev-browser skill dir in the user's skills/ (server.sh, package.json not shipped in this repo); not a script of this repo.",
+  "moved_to": null
+ },
+ {
+  "id": 52,
+  "label": "STALE",
+  "reason": "frontend/ (Tauri app) retired in d6348b56; version source is now root package.json (0.5.7); src-tauri mirror also gone.",
+  "moved_to": "package.json"
+ },
+ {
+  "id": 53,
+  "label": "STALE",
+  "reason": "frontend/src/i18n/ removed in 29c8a132 ('move shared UI under Electron'); locales now in electron/src/renderer/src/i18n/.",
+  "moved_to": "electron/src/renderer/src/i18n/"
+ },
+ {
+  "id": 54,
+  "label": "FP-ACCURATE",
+  "reason": "Prohibition on barrel-importing localDb.ts; barrel deleted in 50bc8ab8a so the rule is obsolete but following it cannot mislead (borderline).",
+  "moved_to": null
+ },
+ {
+  "id": 55,
+  "label": "FP-ACCURATE",
+  "reason": "Same obsolete-but-harmless prohibition; localDb barrel deleted in 50bc8ab8a, guidance (use src/lib/db/*) still right (borderline).",
+  "moved_to": null
+ },
+ {
+  "id": 56,
+  "label": "FP-ACCURATE",
+  "reason": "docs/research/ is listed as the default location NOT to use.",
+  "moved_to": null
+ },
+ {
+  "id": 57,
+  "label": "FP-ACCURATE",
+  "reason": "Says to use layouts/page.html and NOT layouts/_default/single.html in test fixtures; not a repo file.",
+  "moved_to": null
+ },
+ {
+  "id": 58,
+  "label": "FP-ACCURATE",
+  "reason": "Says to use layouts/list.html and NOT layouts/_default/list.html in test fixtures.",
+  "moved_to": null
+ },
+ {
+  "id": 59,
+  "label": "STALE",
+  "reason": "api/db/db_models.py deleted in efbb80074 ('remove more python codes'); the whole api/ Python tree and ensure_model_indexes are gone.",
+  "moved_to": null
+ },
+ {
+  "id": 60,
+  "label": "STALE",
+  "reason": "api/db/db_models.py (ensure_model_indexes) deleted in efbb80074; no Python api/ tree remains.",
+  "moved_to": null
+ },
+ {
+  "id": 61,
+  "label": "STALE",
+  "reason": "db_models.py (Peewee models) deleted in efbb80074; no Python model file remains.",
+  "moved_to": null
+ },
+ {
+  "id": 62,
+  "label": "STALE",
+  "reason": "SINGLE_PANE_SCENARIOS.md renamed to DESKTOP.md in 64bb1c151b6.",
+  "moved_to": "src/vs/sessions/DESKTOP.md"
+ },
+ {
+  "id": 63,
+  "label": "FP-ACCURATE",
+  "reason": "Table tells where prompt files go in the user's workspace (.github/prompts/), a convention, not a file in this repo.",
+  "moved_to": null
+ },
+ {
+  "id": 64,
+  "label": "FP-ACCURATE",
+  "reason": "Sentence states .github/dependabot.yml is gone.",
+  "moved_to": null
+ },
+ {
+  "id": 65,
+  "label": "FP-ACCURATE",
+  "reason": "Says never re-add .github/dependabot.yml; table marks it (deleted).",
+  "moved_to": null
+ },
+ {
+  "id": 66,
+  "label": "FP-ACCURATE",
+  "reason": "skills/blog-post/ cited explicitly as a website route slug that is not a file on disk.",
+  "moved_to": null
+ },
+ {
+  "id": 67,
+  "label": "STALE",
+  "reason": "src/agents/code-mode.worker.ts moved in 09e06495a39 to the QuickJS extension.",
+  "moved_to": "extensions/code-mode-quickjs/src/code-mode.worker.ts"
+ },
+ {
+  "id": 68,
+  "label": "STALE",
+  "reason": "scripts/lib/docker-e2e-scenarios.mjs migrated to .mts in c70aee247e8.",
+  "moved_to": "scripts/lib/docker-e2e-scenarios.mts"
+ },
+ {
+  "id": 69,
+  "label": "STALE",
+  "reason": "scripts/test-projects.test-support.mjs migrated to .mts in c70aee247e8.",
+  "moved_to": "scripts/test-projects.test-support.mts"
+ },
+ {
+  "id": 70,
+  "label": "STALE",
+  "reason": "src/terminal/table.ts moved into package in de1dfab03ef.",
+  "moved_to": "packages/terminal-core/src/table.ts"
+ },
+ {
+  "id": 71,
+  "label": "STALE",
+  "reason": "src/terminal/theme.ts moved into package in de1dfab03ef.",
+  "moved_to": "packages/terminal-core/src/theme.ts"
+ },
+ {
+  "id": 72,
+  "label": "FP-ACCURATE",
+  "reason": "docs/clawhub/ is a publish-time tree replaced by docs-sync-publish, authored in openclaw/clawhub, never here.",
+  "moved_to": null
+ },
+ {
+  "id": 73,
+  "label": "FP-ACCURATE",
+  "reason": "docs/internal/ described as an ignored local scratch dir; not expected in the repo.",
+  "moved_to": null
+ },
+ {
+  "id": 74,
+  "label": "FP-ACCURATE",
+  "reason": "Describes what docs-sync-publish prunes; script still lists CLAUDE.md in AUTHORING_INSTRUCTION_FILES, file need not exist.",
+  "moved_to": null
+ },
+ {
+  "id": 75,
+  "label": "FP-ACCURATE",
+  "reason": "Skill says ClawSweeper lives in a separate checkout (~/Projects/clawsweeper); scripts belong to that repo.",
+  "moved_to": null
+ },
+ {
+  "id": 76,
+  "label": "FP-ACCURATE",
+  "reason": "pnpm run reconcile is a script of the separate ClawSweeper repo named in the skill header.",
+  "moved_to": null
+ },
+ {
+  "id": 77,
+  "label": "FP-ACCURATE",
+  "reason": "repair:create-job runs in the separate ClawSweeper checkout (~/Projects/clawsweeper).",
+  "moved_to": null
+ },
+ {
+  "id": 78,
+  "label": "FP-ACCURATE",
+  "reason": "repair:create-job runs in the separate ClawSweeper checkout; uses ../clawsweeper paths.",
+  "moved_to": null
+ },
+ {
+  "id": 79,
+  "label": "FP-ACCURATE",
+  "reason": "repair:validate-job runs in the separate ClawSweeper checkout.",
+  "moved_to": null
+ },
+ {
+  "id": 80,
+  "label": "FP-ACCURATE",
+  "reason": "repair:dispatch runs in the separate ClawSweeper checkout.",
+  "moved_to": null
+ },
+ {
+  "id": 81,
+  "label": "FP-ACCURATE",
+  "reason": "repair:comment-router runs in the separate ClawSweeper checkout.",
+  "moved_to": null
+ },
+ {
+  "id": 82,
+  "label": "FP-ACCURATE",
+  "reason": "repair:comment-router runs in the separate ClawSweeper checkout.",
+  "moved_to": null
+ },
+ {
+  "id": 83,
+  "label": "FP-ACCURATE",
+  "reason": "Prose 'the successful original npm run and qualified bytes' (a publish run), not an `npm run and` command.",
+  "moved_to": null
+ },
+ {
+  "id": 84,
+  "label": "STALE",
+  "reason": "src/deps/ removed in e643d7b085 restructure; third-party libs are now vendored under untracked vendor/ (exclusion list obsolete).",
+  "moved_to": null
+ },
+ {
+  "id": 85,
+  "label": "STALE",
+  "reason": "src/shell/ no longer exists; shell implementation now under src/runtime/shell/.",
+  "moved_to": "src/runtime/shell/"
+ },
+ {
+  "id": 86,
+  "label": "STALE",
+  "reason": "src/bake/ no longer exists; now under src/runtime/bake/.",
+  "moved_to": "src/runtime/bake/"
+ },
+ {
+  "id": 87,
+  "label": "STALE",
+  "reason": "src/shell/ no longer exists; shell implementation now under src/runtime/shell/.",
+  "moved_to": "src/runtime/shell/"
+ },
+ {
+  "id": 88,
+  "label": "STALE",
+  "reason": "src/bake/ no longer exists; now under src/runtime/bake/.",
+  "moved_to": "src/runtime/bake/"
+ },
+ {
+  "id": 89,
+  "label": "FP-ACCURATE",
+  "reason": "Explicitly says changelog.astro is in the private impeccable-site repo (split out in 90f9eeb9).",
+  "moved_to": null
+ },
+ {
+  "id": 90,
+  "label": "FP-ACCURATE",
+  "reason": "Refers to site/pages/changelog.astro, defined above as in the private impeccable-site repo.",
+  "moved_to": null
+ },
+ {
+  "id": 91,
+  "label": "FP-ACCURATE",
+  "reason": "Explicitly 'impeccable-site's sub-pages-data.js', another (private) repo.",
+  "moved_to": null
+ },
+ {
+  "id": 92,
+  "label": "FP-ACCURATE",
+  "reason": "Explicitly 'In the private impeccable-site repo'; site/ split out in 90f9eeb9.",
+  "moved_to": null
+ },
+ {
+  "id": 93,
+  "label": "FP-ACCURATE",
+  "reason": "framework-viz.js is in the private impeccable-site repo per the same sentence.",
+  "moved_to": null
+ },
+ {
+  "id": 94,
+  "label": "FP-ACCURATE",
+  "reason": "site/content/skills/ is in the private impeccable-site repo per the same sentence.",
+  "moved_to": null
+ },
+ {
+  "id": 95,
+  "label": "FP-ACCURATE",
+  "reason": "Line is prefixed 'impeccable-site:', the private repo.",
+  "moved_to": null
+ },
+ {
+  "id": 96,
+  "label": "FP-RESOLVES",
+  "reason": "`release:<skill|cli|ext>` placeholder; package.json defines release:skill, release:cli, release:ext.",
+  "moved_to": null
+ },
+ {
+  "id": 97,
+  "label": "FP-ACCURATE",
+  "reason": "skill:publish-pointer is run 'on a branch from site main', i.e. in the impeccable-site repo.",
+  "moved_to": null
+ },
+ {
+  "id": 98,
+  "label": "FP-ACCURATE",
+  "reason": "Command runs after `cd ~/code/impeccable-evals`, a separate private repo.",
+  "moved_to": null
+ },
+ {
+  "id": 99,
+  "label": "STALE",
+  "reason": "code/vitest.workspace.ts replaced in 848bd4177b (became code/vitest.shared.ts); Vitest projects now configured in root vitest.config.ts.",
+  "moved_to": "vitest.config.ts"
+ },
+ {
+  "id": 100,
+  "label": "STALE",
+  "reason": "Workspace config gone (848bd4177b); projects config now in root vitest.config.ts.",
+  "moved_to": "vitest.config.ts"
+ },
+ {
+  "id": 101,
+  "label": "STALE",
+  "reason": "File moved into a constants/ subfolder (3bc887e12e).",
+  "moved_to": "packages/twenty-shared/src/metadata/constants/all-metadata-name.constant.ts"
+ },
+ {
+  "id": 102,
+  "label": "STALE",
+  "reason": "tests/mcp_tests/ no longer exists (migrated in ba77646991/102619d47a); MCP integration tests now under tests/integration/mcp/.",
+  "moved_to": "tests/integration/mcp/"
+ },
+ {
+  "id": 103,
+  "label": "FP-ACCURATE",
+  "reason": "Skill runs in the user's project; docs/adr/ is that project's ADR folder, not this skills repo.",
+  "moved_to": null
+ },
+ {
+  "id": 104,
+  "label": "FP-ACCURATE",
+  "reason": "Checklist of things to look for in the user's repo ('Read whatever exists; don't assume').",
+  "moved_to": null
+ },
+ {
+  "id": 105,
+  "label": "FP-ACCURATE",
+  "reason": "Rule says readmes must contain NO `pnpm run exercise` commands.",
+  "moved_to": null
+ },
+ {
+  "id": 106,
+  "label": "FP-ACCURATE",
+  "reason": "Template for the user's .husky/pre-commit; text says omit if the repo has no typecheck script.",
+  "moved_to": null
+ },
+ {
+  "id": 107,
+  "label": "FP-ACCURATE",
+  "reason": "Template for the user's pre-commit hook; text says omit if no test script.",
+  "moved_to": null
+ },
+ {
+  "id": 108,
+  "label": "STALE",
+  "reason": "mcp_connection_manager.rs split/renamed in 0bda8161a.",
+  "moved_to": "codex-rs/codex-mcp/src/connection_manager.rs"
+ },
+ {
+  "id": 109,
+  "label": "STALE",
+  "reason": "benchmark/agbenchmark/challenges/ removed; challenges now in classic/direct_benchmark/challenges/.",
+  "moved_to": "classic/direct_benchmark/challenges/"
+ },
+ {
+  "id": 110,
+  "label": "STALE",
+  "reason": "docs/integrations/basic.md moved in 90466908a docs restructure.",
+  "moved_to": "docs/integrations/block-integrations/basic.md"
+ }
+]

@@ -1,0 +1,152 @@
+[
+ {
+  "kind": "moved-or-deleted",
+  "file": "litellm/proxy/_experimental/mcp_server/AGENTS.md",
+  "line": 99,
+  "ref": "tests/mcp_tests/",
+  "evidence": {
+   "commit": "102619d47a",
+   "date": "2026-10-11",
+   "subject": "test: migrate proxy security, schema migration and MCP legacy tests (#45937)",
+   "moved_to": null
+  },
+  "text": "Use `tests/mcp_tests/` only when extending an existing broader MCP integration",
+  "repo": "BerriAI/litellm",
+  "sha": "a31c5230de303d342f62e0e2ecd62af83e5fcd4e"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": "classic/CLAUDE.md",
+  "line": 115,
+  "ref": "benchmark/agbenchmark/challenges/",
+  "evidence": {
+   "commit": "e33b1e210",
+   "date": "2026-04-03",
+   "subject": "feat(classic):  update classic autogpt a bit to make it more useful for my day to day (#11797)",
+   "moved_to": "classic/direct_benchmark/challenges"
+  },
+  "text": "- `benchmark/agbenchmark/challenges/` - Test cases organized by category (code, retrieval, data, etc.)",
+  "repo": "Significant-Gravitas/AutoGPT",
+  "sha": "8d4a965b7bbc87b271cd7e4c163ed09d443e9199"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": "docs/AGENTS.md",
+  "line": 18,
+  "ref": "docs/integrations/basic.md",
+  "evidence": {
+   "commit": "90466908a",
+   "date": "2026-01-23",
+   "subject": "refactor(docs): restructure platform docs for GitBook and remove MkDo\u2026 (#11825)",
+   "moved_to": "docs/integrations/block-integrations/basic.md"
+  },
+  "text": "When updating manual sections (`<!-- MANUAL: ... -->`) in block documentation files (e.g., `docs/integrations/basic.md`), follow these formats:",
+  "repo": "Significant-Gravitas/AutoGPT",
+  "sha": "8d4a965b7bbc87b271cd7e4c163ed09d443e9199"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": ".cursor/rules/common-hooks.md",
+  "line": 19,
+  "ref": ".claude/settings.json",
+  "evidence": {
+   "commit": "e85bc5fe",
+   "date": "2026-03-31",
+   "subject": "Revert \"feat: install claude-hud plugin (jarrodwatts/claude-hud) (#1041)\"",
+   "moved_to": null
+  },
+  "text": "- Configure `permissions.allow` rules in `~/.claude/settings.json` (or a project's `.claude/settings.json`) instead",
+  "repo": "affaan-m/ECC",
+  "sha": "90606c8315ee09cafc303515c5f33024db6b9882"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": ".cursor/rules/coolify-ai-docs.mdc",
+  "line": 15,
+  "ref": ".ai/README.md",
+  "evidence": {
+   "commit": "3a0098459",
+   "date": "2026-02-09",
+   "subject": "cleanup AI instructions",
+   "moved_to": null
+  },
+  "text": "- **For Cursor IDE**: Start with `.ai/README.md` for navigation",
+  "repo": "coollabsio/coolify",
+  "sha": "2ade6963758266a244fe787152b79ecd35e8849d"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": ".cursor/rules/coolify-ai-docs.mdc",
+  "line": 23,
+  "ref": ".ai/core/technology-stack.md",
+  "evidence": {
+   "commit": "3a0098459",
+   "date": "2026-02-09",
+   "subject": "cleanup AI instructions",
+   "moved_to": null
+  },
+  "text": "- **[Technology Stack](.ai/core/technology-stack.md)** - All versions, packages, dependencies (SINGLE SOURCE OF TRUTH for versions)",
+  "repo": "coollabsio/coolify",
+  "sha": "2ade6963758266a244fe787152b79ecd35e8849d"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": ".cursor/rules/coolify-ai-docs.mdc",
+  "line": 24,
+  "ref": ".ai/core/project-overview.md",
+  "evidence": {
+   "commit": "3a0098459",
+   "date": "2026-02-09",
+   "subject": "cleanup AI instructions",
+   "moved_to": null
+  },
+  "text": "- **[Project Overview](.ai/core/project-overview.md)** - What Coolify is, high-level architecture",
+  "repo": "coollabsio/coolify",
+  "sha": "2ade6963758266a244fe787152b79ecd35e8849d"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": ".cursor/rules/coolify-ai-docs.mdc",
+  "line": 25,
+  "ref": ".ai/core/application-architecture.md",
+  "evidence": {
+   "commit": "3a0098459",
+   "date": "2026-02-09",
+   "subject": "cleanup AI instructions",
+   "moved_to": null
+  },
+  "text": "- **[Application Architecture](.ai/core/application-architecture.md)** - System design, components, relationships",
+  "repo": "coollabsio/coolify",
+  "sha": "2ade6963758266a244fe787152b79ecd35e8849d"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": ".cursor/rules/coolify-ai-docs.mdc",
+  "line": 26,
+  "ref": ".ai/core/deployment-architecture.md",
+  "evidence": {
+   "commit": "3a0098459",
+   "date": "2026-02-09",
+   "subject": "cleanup AI instructions",
+   "moved_to": null
+  },
+  "text": "- **[Deployment Architecture](.ai/core/deployment-architecture.md)** - Deployment flows, Docker, proxies",
+  "repo": "coollabsio/coolify",
+  "sha": "2ade6963758266a244fe787152b79ecd35e8849d"
+ },
+ {
+  "kind": "moved-or-deleted",
+  "file": ".cursor/rules/coolify-ai-docs.mdc",
+  "line": 29,
+  "ref": ".ai/development/development-workflow.md",
+  "evidence": {
+   "commit": "3a0098459",
+   "date": "2026-02-09",
+   "subject": "cleanup AI instructions",
+   "moved_to": null
+  },
+  "text": "- **[Development Workflow](.ai/development/development-workflow.md)** - Dev setup, commands, daily workflows",
+  "repo": "coollabsio/coolify",
+  "sha": "2ade6963758266a244fe787152b79ecd35e8849d"
+ }
+]

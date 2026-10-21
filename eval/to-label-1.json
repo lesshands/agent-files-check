@@ -1,0 +1,1112 @@
+[
+ {
+  "id": 0,
+  "set": "tune",
+  "repo": "JuliusBrussee/caveman",
+  "clone": "repos/JuliusBrussee__caveman",
+  "agent_file": "CLAUDE.md",
+  "line": 369,
+  "reference": ".cursor/rules/caveman.mdc",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 1,
+  "set": "tune",
+  "repo": "JuliusBrussee/caveman",
+  "clone": "repos/JuliusBrussee__caveman",
+  "agent_file": "CLAUDE.md",
+  "line": 370,
+  "reference": ".windsurf/rules/caveman.md",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 2,
+  "set": "tune",
+  "repo": "JuliusBrussee/caveman",
+  "clone": "repos/JuliusBrussee__caveman",
+  "agent_file": "CLAUDE.md",
+  "line": 371,
+  "reference": ".clinerules/caveman.md",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 3,
+  "set": "tune",
+  "repo": "NousResearch/hermes-agent",
+  "clone": "repos/NousResearch__hermes-agent",
+  "agent_file": "optional-skills/blockchain/evm/SKILL.md",
+  "line": 31,
+  "reference": "optional-skills/blockchain/base/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 4,
+  "set": "tune",
+  "repo": "NousResearch/hermes-agent",
+  "clone": "repos/NousResearch__hermes-agent",
+  "agent_file": "skills/AGENTS.md",
+  "line": 8,
+  "reference": "skills/github/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 5,
+  "set": "tune",
+  "repo": "NousResearch/hermes-agent",
+  "clone": "repos/NousResearch__hermes-agent",
+  "agent_file": "skills/AGENTS.md",
+  "line": 8,
+  "reference": "skills/mlops/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 6,
+  "set": "tune",
+  "repo": "NousResearch/hermes-agent",
+  "clone": "repos/NousResearch__hermes-agent",
+  "agent_file": "skills/autonomous-ai-agents/claude-code/SKILL.md",
+  "line": 350,
+  "reference": ".claude/settings.json",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 7,
+  "set": "tune",
+  "repo": "NousResearch/hermes-agent",
+  "clone": "repos/NousResearch__hermes-agent",
+  "agent_file": "skills/autonomous-ai-agents/claude-code/SKILL.md",
+  "line": 597,
+  "reference": ".claude/settings.json",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 8,
+  "set": "tune",
+  "repo": "NousResearch/hermes-agent",
+  "clone": "repos/NousResearch__hermes-agent",
+  "agent_file": "skills/autonomous-ai-agents/claude-code/SKILL.md",
+  "line": 666,
+  "reference": ".claude/settings.json",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 9,
+  "set": "tune",
+  "repo": "NousResearch/hermes-agent",
+  "clone": "repos/NousResearch__hermes-agent",
+  "agent_file": "optional-skills/web-development/page-agent/SKILL.md",
+  "line": 133,
+  "reference": "npm run dev:demo",
+  "kind": "missing-script"
+ },
+ {
+  "id": 10,
+  "set": "tune",
+  "repo": "NousResearch/hermes-agent",
+  "clone": "repos/NousResearch__hermes-agent",
+  "agent_file": "optional-skills/web-development/page-agent/SKILL.md",
+  "line": 134,
+  "reference": "npm run dev:ext",
+  "kind": "missing-script"
+ },
+ {
+  "id": 11,
+  "set": "tune",
+  "repo": "NousResearch/hermes-agent",
+  "clone": "repos/NousResearch__hermes-agent",
+  "agent_file": "optional-skills/web-development/page-agent/SKILL.md",
+  "line": 135,
+  "reference": "npm run build:ext",
+  "kind": "missing-script"
+ },
+ {
+  "id": 12,
+  "set": "tune",
+  "repo": "NousResearch/hermes-agent",
+  "clone": "repos/NousResearch__hermes-agent",
+  "agent_file": "optional-skills/web-development/page-agent/SKILL.md",
+  "line": 144,
+  "reference": "npm run dev:demo",
+  "kind": "missing-script"
+ },
+ {
+  "id": 13,
+  "set": "tune",
+  "repo": "NousResearch/hermes-agent",
+  "clone": "repos/NousResearch__hermes-agent",
+  "agent_file": "optional-skills/web-development/page-agent/SKILL.md",
+  "line": 172,
+  "reference": "npm run dev:demo",
+  "kind": "missing-script"
+ },
+ {
+  "id": 14,
+  "set": "tune",
+  "repo": "Stirling-Tools/Stirling-PDF",
+  "clone": "repos/Stirling-Tools__Stirling-PDF",
+  "agent_file": "AGENTS.md",
+  "line": 454,
+  "reference": "scripts/convert_properties_to_json.py",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 15,
+  "set": "tune",
+  "repo": "Stirling-Tools/Stirling-PDF",
+  "clone": "repos/Stirling-Tools__Stirling-PDF",
+  "agent_file": "CLAUDE.md",
+  "line": 454,
+  "reference": "scripts/convert_properties_to_json.py",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 16,
+  "set": "tune",
+  "repo": "appwrite/appwrite",
+  "clone": "repos/appwrite__appwrite",
+  "agent_file": "apps/console/.cursor/skills/auditing-seo/SKILL.md",
+  "line": 30,
+  "reference": "src/content/docs/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 17,
+  "set": "tune",
+  "repo": "appwrite/appwrite",
+  "clone": "repos/appwrite__appwrite",
+  "agent_file": "apps/console/.cursor/skills/create-announcement/SKILL.md",
+  "line": 26,
+  "reference": "src/content/docs/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 18,
+  "set": "tune",
+  "repo": "appwrite/appwrite",
+  "clone": "repos/appwrite__appwrite",
+  "agent_file": "apps/console/.cursor/skills/create-announcement/SKILL.md",
+  "line": 44,
+  "reference": "src/content/docs/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 19,
+  "set": "tune",
+  "repo": "appwrite/appwrite",
+  "clone": "repos/appwrite__appwrite",
+  "agent_file": "apps/console/.cursor/skills/reviewing-blogs/SKILL.md",
+  "line": 26,
+  "reference": "src/content/docs/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 20,
+  "set": "tune",
+  "repo": "appwrite/appwrite",
+  "clone": "repos/appwrite__appwrite",
+  "agent_file": "apps/console/.cursor/skills/reviewing-blogs/SKILL.md",
+  "line": 95,
+  "reference": "src/content/docs/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 21,
+  "set": "tune",
+  "repo": "appwrite/appwrite",
+  "clone": "repos/appwrite__appwrite",
+  "agent_file": "apps/console/.cursor/skills/reviewing-blogs/SKILL.md",
+  "line": 112,
+  "reference": "src/content/docs/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 22,
+  "set": "tune",
+  "repo": "appwrite/appwrite",
+  "clone": "repos/appwrite__appwrite",
+  "agent_file": "apps/console/.cursor/skills/writing-blogs/SKILL.md",
+  "line": 64,
+  "reference": "src/content/docs/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 23,
+  "set": "tune",
+  "repo": "appwrite/appwrite",
+  "clone": "repos/appwrite__appwrite",
+  "agent_file": "apps/console/.cursor/skills/writing-blogs/SKILL.md",
+  "line": 125,
+  "reference": "src/content/docs/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 24,
+  "set": "tune",
+  "repo": "appwrite/appwrite",
+  "clone": "repos/appwrite__appwrite",
+  "agent_file": "apps/console/.cursor/skills/writing-blogs/SKILL.md",
+  "line": 157,
+  "reference": "src/content/docs/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 25,
+  "set": "tune",
+  "repo": "appwrite/appwrite",
+  "clone": "repos/appwrite__appwrite",
+  "agent_file": "apps/console/.cursor/skills/create-announcement/SKILL.md",
+  "line": 81,
+  "reference": "bun run optimize",
+  "kind": "missing-script"
+ },
+ {
+  "id": 26,
+  "set": "tune",
+  "repo": "appwrite/appwrite",
+  "clone": "repos/appwrite__appwrite",
+  "agent_file": "apps/console/.cursor/skills/create-announcement/SKILL.md",
+  "line": 154,
+  "reference": "bun run optimize",
+  "kind": "missing-script"
+ },
+ {
+  "id": 27,
+  "set": "tune",
+  "repo": "appwrite/appwrite",
+  "clone": "repos/appwrite__appwrite",
+  "agent_file": "apps/console/AGENTS.md",
+  "line": 1117,
+  "reference": "bun run i18n:audit",
+  "kind": "missing-script"
+ },
+ {
+  "id": 28,
+  "set": "tune",
+  "repo": "appwrite/appwrite",
+  "clone": "repos/appwrite__appwrite",
+  "agent_file": "apps/console/AGENTS.md",
+  "line": 1524,
+  "reference": "bun run i18n:audit",
+  "kind": "missing-script"
+ },
+ {
+  "id": 29,
+  "set": "tune",
+  "repo": "appwrite/appwrite",
+  "clone": "repos/appwrite__appwrite",
+  "agent_file": "apps/console/AGENTS.md",
+  "line": 1535,
+  "reference": "bun run i18n:audit",
+  "kind": "missing-script"
+ },
+ {
+  "id": 30,
+  "set": "tune",
+  "repo": "appwrite/appwrite",
+  "clone": "repos/appwrite__appwrite",
+  "agent_file": "apps/console/AGENTS.md",
+  "line": 1661,
+  "reference": "bun run i18n:audit",
+  "kind": "missing-script"
+ },
+ {
+  "id": 31,
+  "set": "tune",
+  "repo": "code-yeongyu/oh-my-openagent",
+  "clone": "repos/code-yeongyu__oh-my-openagent",
+  "agent_file": "AGENTS.md",
+  "line": 267,
+  "reference": "src/plugin/tool-registry.ts",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 32,
+  "set": "tune",
+  "repo": "code-yeongyu/oh-my-openagent",
+  "clone": "repos/code-yeongyu__oh-my-openagent",
+  "agent_file": "AGENTS.md",
+  "line": 277,
+  "reference": "src/plugin/tool-registry.ts",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 33,
+  "set": "tune",
+  "repo": "code-yeongyu/oh-my-openagent",
+  "clone": "repos/code-yeongyu__oh-my-openagent",
+  "agent_file": "AGENTS.md",
+  "line": 325,
+  "reference": "helpers.ts",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 34,
+  "set": "tune",
+  "repo": "code-yeongyu/oh-my-openagent",
+  "clone": "repos/code-yeongyu__oh-my-openagent",
+  "agent_file": "AGENTS.md",
+  "line": 351,
+  "reference": "helpers.ts",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 35,
+  "set": "tune",
+  "repo": "code-yeongyu/oh-my-openagent",
+  "clone": "repos/code-yeongyu__oh-my-openagent",
+  "agent_file": "CLAUDE.md",
+  "line": 267,
+  "reference": "src/plugin/tool-registry.ts",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 36,
+  "set": "tune",
+  "repo": "code-yeongyu/oh-my-openagent",
+  "clone": "repos/code-yeongyu__oh-my-openagent",
+  "agent_file": "CLAUDE.md",
+  "line": 277,
+  "reference": "src/plugin/tool-registry.ts",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 37,
+  "set": "tune",
+  "repo": "code-yeongyu/oh-my-openagent",
+  "clone": "repos/code-yeongyu__oh-my-openagent",
+  "agent_file": "CLAUDE.md",
+  "line": 325,
+  "reference": "helpers.ts",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 38,
+  "set": "tune",
+  "repo": "code-yeongyu/oh-my-openagent",
+  "clone": "repos/code-yeongyu__oh-my-openagent",
+  "agent_file": "CLAUDE.md",
+  "line": 351,
+  "reference": "helpers.ts",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 39,
+  "set": "tune",
+  "repo": "code-yeongyu/oh-my-openagent",
+  "clone": "repos/code-yeongyu__oh-my-openagent",
+  "agent_file": "packages/omo-codex/plugin/AGENTS.md",
+  "line": 14,
+  "reference": "hooks/hooks.json",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 40,
+  "set": "tune",
+  "repo": "code-yeongyu/oh-my-openagent",
+  "clone": "repos/code-yeongyu__oh-my-openagent",
+  "agent_file": "packages/omo-codex/plugin/AGENTS.md",
+  "line": 26,
+  "reference": "hooks/hooks.json",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 41,
+  "set": "tune",
+  "repo": "code-yeongyu/oh-my-openagent",
+  "clone": "repos/code-yeongyu__oh-my-openagent",
+  "agent_file": "packages/omo-native/AGENTS.md",
+  "line": 53,
+  "reference": "bin/omo-agent-toolkit.js",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 42,
+  "set": "tune",
+  "repo": "code-yeongyu/oh-my-openagent",
+  "clone": "repos/code-yeongyu__oh-my-openagent",
+  "agent_file": "packages/omo-senpi/AGENTS.md",
+  "line": 72,
+  "reference": "plugin/skills/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 43,
+  "set": "tune",
+  "repo": "code-yeongyu/oh-my-openagent",
+  "clone": "repos/code-yeongyu__oh-my-openagent",
+  "agent_file": "packages/shared-skills/skills/frontend/SKILL.md",
+  "line": 99,
+  "reference": "references/ui-ux-db/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 44,
+  "set": "tune",
+  "repo": "code-yeongyu/oh-my-openagent",
+  "clone": "repos/code-yeongyu__oh-my-openagent",
+  "agent_file": "packages/shared-skills/skills/ulw-research/AGENTS.md",
+  "line": 49,
+  "reference": "packages/omo-senpi/plugin/skills/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 45,
+  "set": "tune",
+  "repo": "code-yeongyu/oh-my-openagent",
+  "clone": "repos/code-yeongyu__oh-my-openagent",
+  "agent_file": ".agents/skills/publish/SKILL.md",
+  "line": 215,
+  "reference": "bun run script",
+  "kind": "missing-script"
+ },
+ {
+  "id": 46,
+  "set": "tune",
+  "repo": "code-yeongyu/oh-my-openagent",
+  "clone": "repos/code-yeongyu__oh-my-openagent",
+  "agent_file": ".agents/skills/publish/SKILL.md",
+  "line": 216,
+  "reference": "bun run script",
+  "kind": "missing-script"
+ },
+ {
+  "id": 47,
+  "set": "tune",
+  "repo": "code-yeongyu/oh-my-openagent",
+  "clone": "repos/code-yeongyu__oh-my-openagent",
+  "agent_file": "assets/AGENTS.md",
+  "line": 33,
+  "reference": "bun run script",
+  "kind": "missing-script"
+ },
+ {
+  "id": 48,
+  "set": "tune",
+  "repo": "code-yeongyu/oh-my-openagent",
+  "clone": "repos/code-yeongyu__oh-my-openagent",
+  "agent_file": "packages/omo-opencode/scripts/AGENTS.md",
+  "line": 43,
+  "reference": "bun run packages",
+  "kind": "missing-script"
+ },
+ {
+  "id": 49,
+  "set": "tune",
+  "repo": "code-yeongyu/oh-my-openagent",
+  "clone": "repos/code-yeongyu__oh-my-openagent",
+  "agent_file": "packages/shared-skills/skills/programming/SKILL.md",
+  "line": 182,
+  "reference": "bun run script.ts",
+  "kind": "missing-script"
+ },
+ {
+  "id": 50,
+  "set": "tune",
+  "repo": "code-yeongyu/oh-my-openagent",
+  "clone": "repos/code-yeongyu__oh-my-openagent",
+  "agent_file": "packages/shared-skills/skills/programming/SKILL.md",
+  "line": 258,
+  "reference": "bun run scripts",
+  "kind": "missing-script"
+ },
+ {
+  "id": 51,
+  "set": "tune",
+  "repo": "code-yeongyu/oh-my-openagent",
+  "clone": "repos/code-yeongyu__oh-my-openagent",
+  "agent_file": "packages/skills-loader-core/src/features/builtin-skills/dev-browser/SKILL.md",
+  "line": 44,
+  "reference": "npm run start-extension",
+  "kind": "missing-script"
+ },
+ {
+  "id": 52,
+  "set": "tune",
+  "repo": "debpalash/VoiceStudio",
+  "clone": "repos/debpalash__VoiceStudio",
+  "agent_file": ".claude/agents/owner-judge.md",
+  "line": 79,
+  "reference": "frontend/package.json",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 53,
+  "set": "tune",
+  "repo": "debpalash/VoiceStudio",
+  "clone": "repos/debpalash__VoiceStudio",
+  "agent_file": ".claude/agents/owner-judge.md",
+  "line": 95,
+  "reference": "frontend/src/i18n/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 54,
+  "set": "tune",
+  "repo": "diegosouzapw/OmniRoute",
+  "clone": "repos/diegosouzapw__OmniRoute",
+  "agent_file": "AGENTS.md",
+  "line": 303,
+  "reference": "localDb.ts",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 55,
+  "set": "tune",
+  "repo": "diegosouzapw/OmniRoute",
+  "clone": "repos/diegosouzapw__OmniRoute",
+  "agent_file": "AGENTS.md",
+  "line": 719,
+  "reference": "localDb.ts",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 56,
+  "set": "tune",
+  "repo": "diegosouzapw/OmniRoute",
+  "clone": "repos/diegosouzapw__OmniRoute",
+  "agent_file": "CLAUDE.md",
+  "line": 45,
+  "reference": "docs/research/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 57,
+  "set": "tune",
+  "repo": "gohugoio/hugo",
+  "clone": "repos/gohugoio__hugo",
+  "agent_file": "AGENTS.md",
+  "line": 13,
+  "reference": "layouts/_default/single.html",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 58,
+  "set": "tune",
+  "repo": "gohugoio/hugo",
+  "clone": "repos/gohugoio__hugo",
+  "agent_file": "AGENTS.md",
+  "line": 13,
+  "reference": "layouts/_default/list.html",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 59,
+  "set": "tune",
+  "repo": "infiniflow/ragflow",
+  "clone": "repos/infiniflow__ragflow",
+  "agent_file": "AGENTS.md",
+  "line": 74,
+  "reference": "api/db/db_models.py",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 60,
+  "set": "tune",
+  "repo": "infiniflow/ragflow",
+  "clone": "repos/infiniflow__ragflow",
+  "agent_file": "AGENTS.md",
+  "line": 76,
+  "reference": "api/db/db_models.py",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 61,
+  "set": "tune",
+  "repo": "infiniflow/ragflow",
+  "clone": "repos/infiniflow__ragflow",
+  "agent_file": "AGENTS.md",
+  "line": 81,
+  "reference": "db_models.py",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 62,
+  "set": "tune",
+  "repo": "microsoft/vscode",
+  "clone": "repos/microsoft__vscode",
+  "agent_file": ".github/skills/sessions/SKILL.md",
+  "line": 31,
+  "reference": "src/vs/sessions/SINGLE_PANE_SCENARIOS.md",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 63,
+  "set": "tune",
+  "repo": "microsoft/vscode",
+  "clone": "repos/microsoft__vscode",
+  "agent_file": "extensions/copilot/assets/prompts/skills/agent-customization/SKILL.md",
+  "line": 29,
+  "reference": ".github/prompts/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 64,
+  "set": "tune",
+  "repo": "modelcontextprotocol/servers",
+  "clone": "repos/modelcontextprotocol__servers",
+  "agent_file": ".claude/skills/issue-triage/SKILL.md",
+  "line": 302,
+  "reference": ".github/dependabot.yml",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 65,
+  "set": "tune",
+  "repo": "modelcontextprotocol/servers",
+  "clone": "repos/modelcontextprotocol__servers",
+  "agent_file": "AGENTS.md",
+  "line": 211,
+  "reference": ".github/dependabot.yml",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 66,
+  "set": "tune",
+  "repo": "nexu-io/open-design",
+  "clone": "repos/nexu-io__open-design",
+  "agent_file": ".claude/skills/od-contribute/SKILL.md",
+  "line": 156,
+  "reference": "skills/blog-post/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 67,
+  "set": "tune",
+  "repo": "openclaw/openclaw",
+  "clone": "repos/openclaw__openclaw",
+  "agent_file": ".agents/skills/openclaw-debugging/SKILL.md",
+  "line": 143,
+  "reference": "src/agents/code-mode.worker.ts",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 68,
+  "set": "tune",
+  "repo": "openclaw/openclaw",
+  "clone": "repos/openclaw__openclaw",
+  "agent_file": ".agents/skills/openclaw-docker-e2e-authoring/SKILL.md",
+  "line": 28,
+  "reference": "scripts/lib/docker-e2e-scenarios.mjs",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 69,
+  "set": "tune",
+  "repo": "openclaw/openclaw",
+  "clone": "repos/openclaw__openclaw",
+  "agent_file": ".agents/skills/openclaw-test-heap-leaks/SKILL.md",
+  "line": 42,
+  "reference": "scripts/test-projects.test-support.mjs",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 70,
+  "set": "tune",
+  "repo": "openclaw/openclaw",
+  "clone": "repos/openclaw__openclaw",
+  "agent_file": ".github/instructions/copilot.instructions.md",
+  "line": 31,
+  "reference": "src/terminal/table.ts",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 71,
+  "set": "tune",
+  "repo": "openclaw/openclaw",
+  "clone": "repos/openclaw__openclaw",
+  "agent_file": ".github/instructions/copilot.instructions.md",
+  "line": 32,
+  "reference": "src/terminal/theme.ts",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 72,
+  "set": "tune",
+  "repo": "openclaw/openclaw",
+  "clone": "repos/openclaw__openclaw",
+  "agent_file": "docs/AGENTS.md",
+  "line": 7,
+  "reference": "docs/clawhub/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 73,
+  "set": "tune",
+  "repo": "openclaw/openclaw",
+  "clone": "repos/openclaw__openclaw",
+  "agent_file": "docs/AGENTS.md",
+  "line": 39,
+  "reference": "docs/internal/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 74,
+  "set": "tune",
+  "repo": "openclaw/openclaw",
+  "clone": "repos/openclaw__openclaw",
+  "agent_file": "docs/AGENTS.md",
+  "line": 40,
+  "reference": "docs/CLAUDE.md",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 75,
+  "set": "tune",
+  "repo": "openclaw/openclaw",
+  "clone": "repos/openclaw__openclaw",
+  "agent_file": ".agents/skills/clawsweeper/SKILL.md",
+  "line": 74,
+  "reference": "pnpm run audit",
+  "kind": "missing-script"
+ },
+ {
+  "id": 76,
+  "set": "tune",
+  "repo": "openclaw/openclaw",
+  "clone": "repos/openclaw__openclaw",
+  "agent_file": ".agents/skills/clawsweeper/SKILL.md",
+  "line": 76,
+  "reference": "pnpm run reconcile",
+  "kind": "missing-script"
+ },
+ {
+  "id": 77,
+  "set": "tune",
+  "repo": "openclaw/openclaw",
+  "clone": "repos/openclaw__openclaw",
+  "agent_file": ".agents/skills/clawsweeper/SKILL.md",
+  "line": 87,
+  "reference": "pnpm run repair:create-job",
+  "kind": "missing-script"
+ },
+ {
+  "id": 78,
+  "set": "tune",
+  "repo": "openclaw/openclaw",
+  "clone": "repos/openclaw__openclaw",
+  "agent_file": ".agents/skills/clawsweeper/SKILL.md",
+  "line": 96,
+  "reference": "pnpm run repair:create-job",
+  "kind": "missing-script"
+ },
+ {
+  "id": 79,
+  "set": "tune",
+  "repo": "openclaw/openclaw",
+  "clone": "repos/openclaw__openclaw",
+  "agent_file": ".agents/skills/clawsweeper/SKILL.md",
+  "line": 107,
+  "reference": "pnpm run repair:validate-job",
+  "kind": "missing-script"
+ },
+ {
+  "id": 80,
+  "set": "tune",
+  "repo": "openclaw/openclaw",
+  "clone": "repos/openclaw__openclaw",
+  "agent_file": ".agents/skills/clawsweeper/SKILL.md",
+  "line": 108,
+  "reference": "pnpm run repair:dispatch",
+  "kind": "missing-script"
+ },
+ {
+  "id": 81,
+  "set": "tune",
+  "repo": "openclaw/openclaw",
+  "clone": "repos/openclaw__openclaw",
+  "agent_file": ".agents/skills/clawsweeper/SKILL.md",
+  "line": 209,
+  "reference": "pnpm run repair:comment-router",
+  "kind": "missing-script"
+ },
+ {
+  "id": 82,
+  "set": "tune",
+  "repo": "openclaw/openclaw",
+  "clone": "repos/openclaw__openclaw",
+  "agent_file": ".agents/skills/clawsweeper/SKILL.md",
+  "line": 210,
+  "reference": "pnpm run repair:comment-router",
+  "kind": "missing-script"
+ },
+ {
+  "id": 83,
+  "set": "tune",
+  "repo": "openclaw/openclaw",
+  "clone": "repos/openclaw__openclaw",
+  "agent_file": ".agents/skills/release-openclaw-ci/SKILL.md",
+  "line": 887,
+  "reference": "npm run and",
+  "kind": "missing-script"
+ },
+ {
+  "id": 84,
+  "set": "tune",
+  "repo": "oven-sh/bun",
+  "clone": "repos/oven-sh__bun",
+  "agent_file": ".github/workflows/CLAUDE.md",
+  "line": 28,
+  "reference": "src/deps/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 85,
+  "set": "tune",
+  "repo": "oven-sh/bun",
+  "clone": "repos/oven-sh__bun",
+  "agent_file": "AGENTS.md",
+  "line": 142,
+  "reference": "src/shell/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 86,
+  "set": "tune",
+  "repo": "oven-sh/bun",
+  "clone": "repos/oven-sh__bun",
+  "agent_file": "AGENTS.md",
+  "line": 146,
+  "reference": "src/bake/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 87,
+  "set": "tune",
+  "repo": "oven-sh/bun",
+  "clone": "repos/oven-sh__bun",
+  "agent_file": "CLAUDE.md",
+  "line": 142,
+  "reference": "src/shell/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 88,
+  "set": "tune",
+  "repo": "oven-sh/bun",
+  "clone": "repos/oven-sh__bun",
+  "agent_file": "CLAUDE.md",
+  "line": 146,
+  "reference": "src/bake/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 89,
+  "set": "tune",
+  "repo": "pbakaus/impeccable",
+  "clone": "repos/pbakaus__impeccable",
+  "agent_file": "CLAUDE.md",
+  "line": 292,
+  "reference": "site/pages/changelog.astro",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 90,
+  "set": "tune",
+  "repo": "pbakaus/impeccable",
+  "clone": "repos/pbakaus__impeccable",
+  "agent_file": "CLAUDE.md",
+  "line": 307,
+  "reference": "site/pages/changelog.astro",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 91,
+  "set": "tune",
+  "repo": "pbakaus/impeccable",
+  "clone": "repos/pbakaus__impeccable",
+  "agent_file": "CLAUDE.md",
+  "line": 339,
+  "reference": "sub-pages-data.js",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 92,
+  "set": "tune",
+  "repo": "pbakaus/impeccable",
+  "clone": "repos/pbakaus__impeccable",
+  "agent_file": "CLAUDE.md",
+  "line": 340,
+  "reference": "site/scripts/data.js",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 93,
+  "set": "tune",
+  "repo": "pbakaus/impeccable",
+  "clone": "repos/pbakaus__impeccable",
+  "agent_file": "CLAUDE.md",
+  "line": 340,
+  "reference": "framework-viz.js",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 94,
+  "set": "tune",
+  "repo": "pbakaus/impeccable",
+  "clone": "repos/pbakaus__impeccable",
+  "agent_file": "CLAUDE.md",
+  "line": 340,
+  "reference": "site/content/skills/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 95,
+  "set": "tune",
+  "repo": "pbakaus/impeccable",
+  "clone": "repos/pbakaus__impeccable",
+  "agent_file": "CLAUDE.md",
+  "line": 344,
+  "reference": "site/pages/index.astro",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 96,
+  "set": "tune",
+  "repo": "pbakaus/impeccable",
+  "clone": "repos/pbakaus__impeccable",
+  "agent_file": "CLAUDE.md",
+  "line": 309,
+  "reference": "bun run release",
+  "kind": "missing-script"
+ },
+ {
+  "id": 97,
+  "set": "tune",
+  "repo": "pbakaus/impeccable",
+  "clone": "repos/pbakaus__impeccable",
+  "agent_file": "CLAUDE.md",
+  "line": 310,
+  "reference": "bun run skill:publish-pointer",
+  "kind": "missing-script"
+ },
+ {
+  "id": 98,
+  "set": "tune",
+  "repo": "pbakaus/impeccable",
+  "clone": "repos/pbakaus__impeccable",
+  "agent_file": "CLAUDE.md",
+  "line": 392,
+  "reference": "bun run serve",
+  "kind": "missing-script"
+ },
+ {
+  "id": 99,
+  "set": "tune",
+  "repo": "storybookjs/storybook",
+  "clone": "repos/storybookjs__storybook",
+  "agent_file": ".cursorrules",
+  "line": 15,
+  "reference": "code/vitest.workspace.ts",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 100,
+  "set": "tune",
+  "repo": "storybookjs/storybook",
+  "clone": "repos/storybookjs__storybook",
+  "agent_file": ".cursorrules",
+  "line": 29,
+  "reference": "code/vitest.workspace.ts",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 101,
+  "set": "tune",
+  "repo": "twentyhq/twenty",
+  "clone": "repos/twentyhq__twenty",
+  "agent_file": ".claude/skills/syncable-entity-types-and-constants/SKILL.md",
+  "line": 27,
+  "reference": "packages/twenty-shared/src/metadata/all-metadata-name.constant.ts",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 102,
+  "set": "heldout",
+  "repo": "BerriAI/litellm",
+  "clone": "repos/BerriAI__litellm",
+  "agent_file": "litellm/proxy/_experimental/mcp_server/AGENTS.md",
+  "line": 99,
+  "reference": "tests/mcp_tests/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 103,
+  "set": "heldout",
+  "repo": "mattpocock/skills",
+  "clone": "repos/mattpocock__skills",
+  "agent_file": "skills/engineering/improve-codebase-architecture/SKILL.md",
+  "line": 14,
+  "reference": "docs/adr/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 104,
+  "set": "heldout",
+  "repo": "mattpocock/skills",
+  "clone": "repos/mattpocock__skills",
+  "agent_file": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
+  "line": 26,
+  "reference": "docs/adr/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 105,
+  "set": "heldout",
+  "repo": "mattpocock/skills",
+  "clone": "repos/mattpocock__skills",
+  "agent_file": "skills/misc/scaffold-exercises/SKILL.md",
+  "line": 62,
+  "reference": "pnpm run exercise",
+  "kind": "missing-script"
+ },
+ {
+  "id": 106,
+  "set": "heldout",
+  "repo": "mattpocock/skills",
+  "clone": "repos/mattpocock__skills",
+  "agent_file": "skills/misc/setup-pre-commit/SKILL.md",
+  "line": 43,
+  "reference": "npm run typecheck",
+  "kind": "missing-script"
+ },
+ {
+  "id": 107,
+  "set": "heldout",
+  "repo": "mattpocock/skills",
+  "clone": "repos/mattpocock__skills",
+  "agent_file": "skills/misc/setup-pre-commit/SKILL.md",
+  "line": 44,
+  "reference": "npm run test",
+  "kind": "missing-script"
+ },
+ {
+  "id": 108,
+  "set": "heldout",
+  "repo": "openinterpreter/openinterpreter",
+  "clone": "repos/openinterpreter__openinterpreter",
+  "agent_file": "AGENTS.md",
+  "line": 35,
+  "reference": "codex-rs/codex-mcp/src/mcp_connection_manager.rs",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 109,
+  "set": "heldout",
+  "repo": "Significant-Gravitas/AutoGPT",
+  "clone": "repos/Significant-Gravitas__AutoGPT",
+  "agent_file": "classic/CLAUDE.md",
+  "line": 115,
+  "reference": "benchmark/agbenchmark/challenges/",
+  "kind": "moved-or-deleted"
+ },
+ {
+  "id": 110,
+  "set": "heldout",
+  "repo": "Significant-Gravitas/AutoGPT",
+  "clone": "repos/Significant-Gravitas__AutoGPT",
+  "agent_file": "docs/AGENTS.md",
+  "line": 18,
+  "reference": "docs/integrations/basic.md",
+  "kind": "moved-or-deleted"
+ }
+]

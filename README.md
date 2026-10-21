@@ -5,11 +5,12 @@ Cline rules) describe the code. The code moves; the files often do not. This che
 where they no longer match, and proves each one from your own git history.
 
 ```
-$ python3 agent_files_check.py
-agent-files-check 0.1.0: 4 agent file(s) read, 2 finding(s)
-CLAUDE.md:41  [moved-or-deleted]  `src/components/canvas/todo-list.tsx` is not in the repository. Last removed or
-    renamed in 3f2a9c1 (2026-05-02): move canvas examples. It looks like it moved to `src/components/example-canvas/todo-list.tsx`
-AGENTS.md:88  [missing-script]  `pnpm run typecheck`: no package.json in the repository (3 checked) defines this script
+$ python3 agent_files_check.py --no-footer      # run in a checkout of oven-sh/bun, 21 Oct 2026
+agent-files-check 0.1.0: 18 agent file(s) read, 5 finding(s)
+AGENTS.md:142  [moved-or-deleted]  `src/shell/` is not in the repository. Last removed or renamed in 23427dbc12
+    (2026-05-14): Rewrite Bun in Rust (#30412). It looks like it moved to `src/runtime/shell`
+    - `src/shell/` - Cross-platform shell implementation
+...
 ```
 
 ## What it reports
@@ -58,7 +59,8 @@ Findings show as notes on the pull request and in the job summary. Inputs: `fail
 ## How well it works
 
 Measured before release on public repositories; see [SCORE.md](SCORE.md) for the method, the labelled findings and the
-intervals. Short version: SCORE_SHORT
+intervals. Short version: on 45 popular repositories it had never seen, 9 of its 10 findings were real
+stale references (95% interval 60% to 98%). It finds few things, and it is quiet when it cannot prove one.
 
 ## What it cannot see
 

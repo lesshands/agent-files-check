@@ -160,13 +160,13 @@ class Repo:
             if cols[0].startswith("R") and len(cols) == 3 and cols[1] == path:
                 moved_to = cols[2]
                 break
-        if moved_to is None:
+        if moved_to is None and not is_dir:
+            # deleted, and exactly one file of the same name was added in the same commit
             name = path.rsplit("/", 1)[-1]
-            for c in whole.splitlines():
-                cols = c.split("\t")
-                if cols[0] == "A" and len(cols) == 2 and cols[1].rsplit("/", 1)[-1] == name:
-                    moved_to = cols[1]
-                    break
+            added = [c.split("\t")[1] for c in whole.splitlines()
+                     if c.startswith("A\t") and c.split("\t")[1].rsplit("/", 1)[-1] == name]
+            if len(added) == 1:
+                moved_to = added[0]
         if moved_to and is_dir:
             suffix = path[len(ref):]
             moved_to = moved_to[: -len(suffix)] if suffix and moved_to.endswith(suffix) else None
@@ -373,12 +373,18 @@ def check_diff(repo, files, diff_range):
             for c in cands:
                 c = c.strip("/")
                 hit = c if c in gone and not repo.exists(c) else None
+                folder = None
                 if hit is None and c in gone_dirs and not repo.exists(c):
-                    hit = gone_dirs[c]
+                    hit, folder = gone_dirs[c], c
                 if hit:
+                    moved = gone.get(hit)
+                    if folder and moved:
+                        suffix = hit[len(folder):]
+                        moved = moved[: -len(suffix)] if moved.endswith(suffix) else None
                     findings.append({
                         "kind": "pr-breaks", "file": af, "line": line_no, "ref": ref,
-                        "evidence": {"changed": hit, "moved_to": gone.get(hit)}, "text": line.strip()[:240],
+                        "evidence": {"changed": folder or hit, "folder": bool(folder), "moved_to": moved},
+                        "text": line.strip()[:240],
                     })
                     break
     return findings
@@ -394,10 +400,12 @@ def describe(f):
     if f["kind"] == "missing-script":
         return f"`{f['ref']}`: no package.json in the repository ({e['package_json_files']} checked) defines this script"
     if f["kind"] == "pr-breaks":
-        s = f"this change {'renames' if e.get('moved_to') else 'deletes'} `{e['changed']}`"
+        what = "moves the folder" if e.get("folder") and e.get("moved_to") else \
+            "removes the folder" if e.get("folder") else "renames" if e.get("moved_to") else "deletes"
+        s = f"this change {what} `{e['changed']}`"
         if e.get("moved_to"):
             s += f" to `{e['moved_to']}`"
-        return s + f", which `{f['file']}` names as `{f['ref']}`"
+        return s + f", which this line still names"
     return ""
 
 
